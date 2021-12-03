@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 12px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+header nav {
+  -webkit-box-shadow: 0px 9px 20px -3px rgba(0, 0, 0, 0.72);
+          box-shadow: 0px 9px 20px -3px rgba(0, 0, 0, 0.72);
+}
+
+header nav .cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+
+header nav .cont .logo a img {
+  width: 212px;
+  height: 25px;
+}
+
+header nav .cont .nav-links {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+header nav .cont .nav-links ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .cont .nav-links ul li {
+  padding: 0 30px;
+}
+
+header nav .cont .nav-links ul li .sub-links {
+  height: 100%;
+}
+
+header nav .cont .nav-links ul li .sub-links ul {
+  display: none;
+  width: 100px;
+  height: 400px;
+  background-color: black;
+}
+
+header nav .cont .nav-links ul li .sub-links ul li a {
+  color: white;
+}
+
+header nav .cont .basket-search ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .cont .basket-search ul li {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .cont .basket-search ul li .search-input {
+  display: none;
+}
+
+header nav .cont .basket-search ul li .notificationBasket {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .cont .basket-search ul li .notificationBasket .badgenumber {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  position: absolute;
+  left: 8px;
+  border-radius: 50%;
+  bottom: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .cont .basket-search ul li .notificationBasket .badgenumber .num {
+  margin: 0;
+  color: white;
+  font-size: 10px;
+}
+
+header nav .cont .basket-search ul li .notificationBasket i {
+  font-size: 20px;
+}
+
+li .main-link a:hover .sub-links {
+  display: block;
+}
+
+.actve {
+  border-bottom: 1px solid black;
+}
+
+li:after {
+  display: block;
+  content: '';
+  border-bottom: solid 1px black;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+li:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+li:after {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+li:after {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+/*# sourceMappingURL=style.css.map */
