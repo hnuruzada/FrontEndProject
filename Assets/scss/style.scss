@@ -7,6 +7,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth
+}
 
 
 
@@ -23,17 +26,17 @@ li a:hover {
     color: black;
 }
 
-header{
-    nav{
+header {
+    nav {
         .container {
             .row {
                 height: 100px;
-        
+
                 .logo {
                     height: 100%;
                     display: flex;
                     align-items: center;
-        
+
                     a {
                         img {
                             width: 212px;
@@ -41,16 +44,16 @@ header{
                         }
                     }
                 }
-        
+
                 .menu {
                     height: 100%;
                     align-items: center;
                     font-weight: normal;
-        
+
                     .active {
                         border-bottom: 1px solid black;
                     }
-        
+
                     li:after {
                         display: block;
                         content: '';
@@ -58,19 +61,19 @@ header{
                         transform: scaleX(0);
                         transition: transform 250ms ease-in-out;
                     }
-        
+
                     li:hover:after {
                         transform: scaleX(1);
                     }
-        
+
                     li:after {
                         transform-origin: 100% 50%;
                     }
-        
+
                     li :after {
                         transform-origin: 0% 50%;
                     }
-        
+
                     .nav_ul {
                         display: flex;
                         list-style: none;
@@ -78,36 +81,36 @@ header{
                         width: 100%;
                         height: 100%;
                         align-items: center;
-        
+
                         .nav_li {
                             h4 {
                                 font-size: 15px;
                             }
-        
+
                             .home {
                                 position: absolute;
                                 width: 220px;
                                 height: 0px;
                                 overflow: hidden;
                                 top: 75px;
-        
+
                                 background-color: white;
                                 transition: 0.2s;
                                 transition-delay: 0.1s;
                             }
-        
+
                             .pages {
                                 position: absolute;
                                 width: 220px;
                                 height: 0px;
                                 overflow: hidden;
                                 top: 75px;
-        
+
                                 background-color: white;
                                 transition: 0.2s;
                                 transition-delay: 0.1s;
                             }
-        
+
                             .shop {
                                 display: flex;
                                 justify-content: space-between;
@@ -117,12 +120,12 @@ header{
                                 overflow: hidden;
                                 top: 75px;
                                 right: 1px;
-        
+
                                 background-color: white;
                                 transition: 0.2s;
                                 transition-delay: 0.1s;
                             }
-        
+
                             .portfolio {
                                 position: absolute;
                                 width: 220px;
@@ -132,119 +135,119 @@ header{
                                 background-color: white;
                                 transition: 0.2s;
                                 transition-delay: 0.1s;
-        
-        
+
+
                                 &:hover .portfolioLayouts {
                                     height: 230px;
                                 }
                             }
-        
+
                             .blog {
                                 position: absolute;
                                 width: 220px;
                                 height: 0px;
                                 overflow: hidden;
                                 top: 75px;
-        
-        
+
+
                                 background-color: white;
                                 transition: 0.2s;
                                 transition-delay: 0.1s;
                             }
-        
+
                             .elements {
                                 position: absolute;
                                 width: 220px;
                                 height: 0px;
                                 overflow: hidden;
                                 top: 75px;
-        
+
                                 background-color: white;
                                 transition: 0.2s;
                                 transition-delay: 0.1s;
                             }
-        
+
                             &:hover .home {
                                 height: 280px;
-        
+
                                 z-index: 5;
-        
+
                             }
-        
+
                             &:hover .pages {
                                 height: 280px;
                                 z-index: 5;
-        
-        
+
+
                             }
-        
+
                             &:hover .shop {
                                 height: 600px;
                                 z-index: 5;
-        
-        
+
+
                             }
-        
+
                             &:hover .portfolio {
                                 height: 280px;
                                 z-index: 5;
-        
-        
+
+
                             }
-        
+
                             &:hover .blog {
                                 height: 280px;
                                 z-index: 5;
-        
-        
+
+
                             }
-        
+
                             &:hover .elements {
                                 height: 280px;
                                 z-index: 5;
-        
-        
+
+
                             }
-        
-        
+
+
                             a {
                                 font-size: 12px;
                                 text-decoration: none;
                                 color: black;
                             }
-        
-        
+
+
                         }
                     }
                 }
-        
+
                 .basket-search {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-        
+
                     .bsketSearch-list {
                         margin: 0;
                         display: flex;
                         justify-content: flex-end;
                         align-items: center;
-        
+
                         li {
                             padding: 0 10px;
                             display: flex;
-        
+
                             a {
                                 color: black;
                             }
-        
+
                             .search-input {
                                 display: none;
                             }
-        
+
                             .notificationBasket {
                                 position: relative;
                                 display: flex;
-        
+
                                 .badgenumber {
                                     width: 12px;
                                     height: 12px;
@@ -256,14 +259,14 @@ header{
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-        
+
                                     .num {
                                         margin: 0;
                                         color: white;
                                         font-size: 10px;
                                     }
                                 }
-        
+
                                 i {
                                     font-size: 20px;
                                 }
@@ -273,9 +276,149 @@ header{
                 }
             }
         }
-        
+
     }
 }
+
+main {
+    #photo-slide {
+        position: relative;
+
+        .imagesSlide {
+            overflow: hidden;
+
+            .imgscale{
+                position: relative;
+                img {
+                    opacity: 0;
+                    position: relative;
+                    z-index: -2;
+                    animation: 50s linear 0s normal none infinite running zoomEffect;
+                    
+                    animation-duration: 9s;
+                    
+    
+                    width: 100%;
+                    height: 477px;
+                }
+                @keyframes zoomEffect {
+                    from {
+                        transform: scale(1, 1);
+                    }
+                    to {
+                        transform: scale(1.5, 1.5);
+                    }
+                }
+                // .lefticon{
+                //     position: absolute;
+                //     top: 50%;
+                //     left: 0;
+
+                // }
+                // .righticon{
+                //     position: absolute;
+                //     right: 0;
+                //     top: 50%;
+                // }
+            }
+
+            .clickright {
+                position: absolute;
+                transform: translate(1%, -50%);
+                font-size: 45px;
+                top: 50%;
+                right: 1%;
+                color: rgb(194, 194, 194);
+                transition: 0.3s;
+                transition-timing-function: ease-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: black;
+                    
+                }
+
+
+            }
+
+            .clickleft {
+                position: absolute;
+                transform: translate(1%, -50%);
+                font-size: 45px;
+                top: 50%;
+                left: 1%;
+                color: rgb(194, 194, 194);
+                transition: 0.3s;
+                transition-timing-function: ease-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: black;
+                    
+                }
+
+            }
+        }
+
+        .flowersInfo {
+
+            transition: 5.5s;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translate(5%, -50%);
+            width: 380px;
+
+            .Infos {
+
+                justify-content: space-around;
+
+                .titleInfo {
+
+                    span {
+                        font-family: "Playfair Display", serif;
+                        font-size: 50px;
+                        margin-left: 10px;
+                        font-weight: lighter;
+                        line-height: 1;
+
+                        &:nth-child(2) {
+                            color: red;
+                        }
+                    }
+                }
+
+
+            }
+
+            .descInfo {
+                margin-top: 25px;
+
+                p {
+                    opacity: 60%;
+                    padding-left: 10px;
+                    font-family: "Lora", serif;
+                }
+            }
+
+            .signatureInfo {
+                padding-left: 10px;
+                margin-top: 25px;
+
+                img {
+                    width: 60px;
+                    height: 20px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
 #productFilter {
 
     .links {
@@ -328,43 +471,50 @@ header{
         }
     }
 }
-#videodesc{
+
+#videodesc {
     padding: 30px 0;
-    border: 1px solid;
-    .container{
-        .videotitles{
+    
+
+    .container {
+        .videotitles {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .video{
+
+            .video {
                 position: relative;
                 overflow: hidden;
-                img{
-                
+
+                img {
+
                     width: 600px;
                     height: 400px;
                     transition: 0.3s;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.08);
                     }
                 }
-                
-                i{
+
+                i {
                     position: absolute;
-                    top:50%;
+                    top: 50%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     font-size: 60px;
                     color: white;
                     background-color: red;
                     border-radius: 50%;
                 }
             }
-            .title{
-                .iconLists{
-                    .lists{
+
+            .title {
+                .iconLists {
+                    .lists {
                         display: flex;
-                        .icon{
+
+                        .icon {
                             margin-right: 25px;
                         }
                     }
@@ -372,6 +522,23 @@ header{
             }
         }
     }
+}
+
+#backToTop {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border-radius: 12px;
+    display: none;
+    cursor: pointer;
 }
 
 //         .myContainer {

@@ -9,6 +9,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   -webkit-box-shadow: 1px 25px 62px -16px rgba(0, 0, 0, 0.47);
           box-shadow: 1px 25px 62px -16px rgba(0, 0, 0, 0.47);
@@ -296,6 +300,138 @@ header nav .container .row .basket-search .bsketSearch-list li .notificationBask
   font-size: 20px;
 }
 
+main #photo-slide {
+  position: relative;
+}
+
+main #photo-slide .imagesSlide {
+  overflow: hidden;
+}
+
+main #photo-slide .imagesSlide .imgscale {
+  position: relative;
+}
+
+main #photo-slide .imagesSlide .imgscale img {
+  opacity: 0;
+  position: relative;
+  z-index: -2;
+  -webkit-animation: 50s linear 0s normal none infinite running zoomEffect;
+          animation: 50s linear 0s normal none infinite running zoomEffect;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  width: 100%;
+  height: 477px;
+}
+
+@-webkit-keyframes zoomEffect {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoomEffect {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+main #photo-slide .imagesSlide .clickright {
+  position: absolute;
+  -webkit-transform: translate(1%, -50%);
+          transform: translate(1%, -50%);
+  font-size: 45px;
+  top: 50%;
+  right: 1%;
+  color: #c2c2c2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+main #photo-slide .imagesSlide .clickright:hover {
+  color: black;
+}
+
+main #photo-slide .imagesSlide .clickleft {
+  position: absolute;
+  -webkit-transform: translate(1%, -50%);
+          transform: translate(1%, -50%);
+  font-size: 45px;
+  top: 50%;
+  left: 1%;
+  color: #c2c2c2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+main #photo-slide .imagesSlide .clickleft:hover {
+  color: black;
+}
+
+main #photo-slide .flowersInfo {
+  -webkit-transition: 5.5s;
+  transition: 5.5s;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translate(5%, -50%);
+          transform: translate(5%, -50%);
+  width: 380px;
+}
+
+main #photo-slide .flowersInfo .Infos {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #photo-slide .flowersInfo .Infos .titleInfo span {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  margin-left: 10px;
+  font-weight: lighter;
+  line-height: 1;
+}
+
+main #photo-slide .flowersInfo .Infos .titleInfo span:nth-child(2) {
+  color: red;
+}
+
+main #photo-slide .flowersInfo .descInfo {
+  margin-top: 25px;
+}
+
+main #photo-slide .flowersInfo .descInfo p {
+  opacity: 60%;
+  padding-left: 10px;
+  font-family: "Lora", serif;
+}
+
+main #photo-slide .flowersInfo .signatureInfo {
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+main #photo-slide .flowersInfo .signatureInfo img {
+  width: 60px;
+  height: 20px;
+}
+
 #productFilter .links {
   width: 70%;
 }
@@ -342,7 +478,6 @@ header nav .container .row .basket-search .bsketSearch-list li .notificationBask
 
 #videodesc {
   padding: 30px 0;
-  border: 1px solid;
 }
 
 #videodesc .container .videotitles {
@@ -394,5 +529,28 @@ header nav .container .row .basket-search .bsketSearch-list li .notificationBask
 
 #videodesc .container .videotitles .title .iconLists .lists .icon {
   margin-right: 25px;
+}
+
+#backToTop {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: red;
+  font-size: 20px;
+  color: white;
+  border-radius: 12px;
+  display: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
