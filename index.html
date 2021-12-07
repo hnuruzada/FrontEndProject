@@ -14,7 +14,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Assets/scss/owl.carousel.min.css">
+    <link rel="stylesheet" href="./Assets/scss/owl.theme.default.min.css">
     <link rel="stylesheet" href="./Assets/scss/style.css">
     <title>Document</title>
 </head>
@@ -231,13 +236,13 @@
             </div>
         </nav>
     </header>
-  <main>
-    <section id="photo-slide">
-        
+    <main>
+        <section id="photo-slide">
+
             <div class="imagesSlide">
                 <div class="imgscale">
                     <i class="bi bi-arrow-right clickright"></i>
-                <i class="bi bi-arrow-left clickleft"></i>
+                    <i class="bi bi-arrow-left clickleft"></i>
                     <img id="loop" src="./Assets/images/h3-slider-background.jpg" alt="">
                 </div>
             </div>
@@ -248,213 +253,571 @@
                         <span>you mean it.</span>
                     </div>
                     <div class="descInfo">
-                        <p>Where flowers are our inspiration to create lasting <br> memories. Whatever the occasion, our flowers will <br> make it special cursus a sit amet mauris. </p>
+                        <p>Where flowers are our inspiration to create lasting <br> memories. Whatever the occasion, our
+                            flowers will <br> make it special cursus a sit amet mauris. </p>
                     </div>
                 </div>
-                
+
                 <div class="signatureInfo">
                     <img src="./Assets/images/h2-sign-img.png" alt="">
-                    
+
                 </div>
             </div>
-        
-    </section>
-    <section id="productFilter">
-        <div class="container">
-            <div class="links">
-                <ul>
-                    <li class="all" id="All"><a href="">ALL</a></li>
-                    <li class="all" id="popular"><a href="">POPULAR</a></li>
-                    <li class="all" id="winter"><a href="">WINTER</a></li>
-                    <li class="all" id="various"><a href="">VARIOUS</a></li>
-                    <li class="all" id="exotic"><a href="">EXOTIC</a></li>
-                    <li class="all" id="greens"><a href="">GREENS</a></li>
-                    <li class="all" id="cactuses"><a href="">CACTUSES</a></li>
-                </ul>
+
+        </section>
+        <section id="productFilter">
+            <div class="container">
+                <div class="links">
+                    <ul>
+                        <li class="all" id="All"><a href="">ALL</a></li>
+                        <li class="all" id="popular"><a href="">POPULAR</a></li>
+                        <li class="all" id="winter"><a href="">WINTER</a></li>
+                        <li class="all" id="various"><a href="">VARIOUS</a></li>
+                        <li class="all" id="exotic"><a href="">EXOTIC</a></li>
+                        <li class="all" id="greens"><a href="">GREENS</a></li>
+                        <li class="all" id="cactuses"><a href="">CACTUSES</a></li>
+                    </ul>
+                </div>
+                <div class="product row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col ">
+                        <div class="Cards card bg-body popular cactuses " data-id="1">
+                            <div class="cardImage">
+                                <img src="./Assets/images/shop-14-img.jpg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+
+                                    <h6 class="fw-bolder">MAJESTY PALM</h6>
+                                    <div class="priceCart">
+                                        <div class="price">
+                                            <span class="spanprice">$259</span>
+                                        </div>
+                                        <div class="addToCart">
+                                            <a class="addtocart" href="">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body winter exotic" data-id="2">
+                            <div class="cardImage">
+                                <img src="./Assets/images/shop-13-img.jpg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+
+                                    <h6 class="fw-bolder">FOXGLOVE FLOWER</h6>
+
+                                    <div class="priceCart">
+                                        <div class="price">
+                                            <span class="spanprice">$259</span>
+                                        </div>
+                                        <div class="addToCart">
+                                            <a class="addtocart" href="">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body various greens" data-id="3">
+                            <div class="sold">
+                                <span><strong>Sold</strong></span>
+                            </div>
+                            <div class="cardImage">
+                                <img src="./Assets/images/shop-10-img.jpg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+
+                                    <h6 class="fw-bolder">SWEET ALYSSUM</h6>
+
+                                    <div class="priceCart">
+                                        <div class="price">
+                                            <span class="spanprice">$259</span>
+                                        </div>
+                                        <div class="addToCart">
+                                            <a class="addtocart" href="">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body exotic popular" data-id="4">
+                            <div class="cardImage">
+                                <img src="./Assets/images/shop-11-img.jpg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+
+                                    <h6 class="fw-bolder">SPRING SNOWFLAKE</h6>
+
+                                    <div class="priceCart">
+                                        <div class="price">
+                                            <span class="spanprice">$259</span>
+                                        </div>
+                                        <div class="addToCart">
+                                            <a class="addtocart" href="">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body greens winter" data-id="5">
+                            <div class="sale">
+                                <span><strong>Sale</strong></span>
+                            </div>
+                            <div class="cardImage">
+                                <img src="./Assets/images/shop-12-img.jpg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+
+                                    <h6 class="fw-bolder">SCARLET SAGE</h6>
+
+                                    <div class="priceCart">
+                                        <div class="price">
+                                            <span class="spanprice">$259</span>
+                                        </div>
+                                        <div class="addToCart">
+                                            <a class="addtocart" href="">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card  bg-body winter popular" data-id="6">
+                            <div class="cardImage">
+                                <img src="./Assets/images/shop-9-img.jpg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+
+                                    <h6 class="fw-bolder">ROCK SOAPWORT</h6>
+
+                                    <div class="priceCart">
+                                        <div class="price">
+                                            <span class="spanprice">$259</span>
+                                        </div>
+                                        <div class="addToCart">
+                                            <a class="addtocart" href="">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body greens various" data-id="7">
+                            <div class="cardImage">
+                                <img src="./Assets/images/shop-8-img.jpg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+
+                                    <h6 class="fw-bolder">SUMMER SAVORY</h6>
+
+                                    <div class="priceCart">
+                                        <div class="price">
+                                            <span class="spanprice">$259</span>
+                                        </div>
+                                        <div class="addToCart">
+                                            <a class="addtocart" href="">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body exotic" data-id="8">
+                            <div class="cardImage">
+                                <img src="./Assets/images/shop-7-img.jpg" class="card-img-top" alt="">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="text-center">
+
+                                    <h6 class="fw-bolder">WILD ROSES</h6>
+
+                                    <div class="priceCart">
+                                        <div class="price">
+                                            <span class="spanprice">$259</span>
+                                        </div>
+                                        <div class="addToCart">
+                                            <a class="addtocart" href="">Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="product row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <div class="col ">
-                    <div class="Cards card bg-body popular cactuses " data-id="1">
-                        <img src="./Assets/images/shop-14-img.jpg" class="card-img-top" alt="">
-                        <div class="card-body p-4">
-                            <div class="text-center">
-
-                                <h6 class="fw-bolder">MAJESTY PALM</h6>
-                                <a class="addtocart" href="">Add to cart</a>
-                                <span class="price">$259</span>
-                                
-                            </div>
-                        </div>
-
+        </section>
+        <section id="videodesc">
+            <div class="container">
+                <div class="row videotitles">
+                    <div class="video">
+                        <img src="./Assets/images/h3-video-img.jpg" alt="">
+                        <i class="fas fa-play-circle"></i>
                     </div>
-                </div>
-                <div class="col ">
-                    <div class="Cards card bg-body winter exotic" data-id="2">
-                        <img src="./Assets/images/shop-13-img.jpg" class="card-img-top" alt="">
-                        <div class="card-body p-4">
-                            <div class="text-center">
-
-                                <h6 class="fw-bolder">FOXGLOVE FLOWER</h6>
-
-                                <span class="price">$259</span>
-                                <a class="addtocart" href="">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="Cards card bg-body various greens" data-id="3">
-                        <img src="./Assets/images/shop-10-img.jpg" class="card-img-top" alt="">
-                        <div class="card-body p-4">
-                            <div class="text-center">
-
-                                <h6 class="fw-bolder">SWEET ALYSSUM</h6>
-
-                                <span class="price">$259</span>
-                                <a class="addtocart" href="">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="Cards card bg-body exotic popular" data-id="4">
-                        <img src="./Assets/images/shop-11-img.jpg" class="card-img-top" alt="">
-                        <div class="card-body p-4">
-                            <div class="text-center">
-
-                                <h6 class="fw-bolder">SPRING SNOWFLAKE</h6>
-
-                                <span class="price">$170</span>
-                                <a class="addtocart" href="">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="Cards card bg-body greens winter" data-id="5">
-                        <img src="./Assets/images/shop-12-img.jpg" class="card-img-top" alt="">
-                        <div class="card-body p-4">
-                            <div class="text-center">
-
-                                <h6 class="fw-bolder">SCARLET SAGE</h6>
-
-                                <span class="price"
-                                    style="text-decoration-line: line-through;">$259</span><span>$159</span>
-                                <a class="addtocart" href="">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="Cards card  bg-body winter popular" data-id="6">
-                        <img src="./Assets/images/shop-9-img.jpg" class="card-img-top" alt="">
-                        <div class="card-body p-4">
-                            <div class="text-center">
-
-                                <h6 class="fw-bolder">ROCK SOAPWORT</h6>
-
-                                <span class="price">$259</span>
-                                <a class="addtocart" href="">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="Cards card bg-body greens various" data-id="7">
-                        <img src="./Assets/images/shop-8-img.jpg" class="card-img-top" alt="">
-                        <div class="card-body p-4">
-                            <div class="text-center">
-
-                                <h6 class="fw-bolder">SUMMER SAVORY</h6>
-
-                                <span class="price">$259</span>
-                                <a class="addtocart" href="">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="Cards card bg-body exotic" data-id="8">
-                        <img src="./Assets/images/shop-7-img.jpg" class="card-img-top" alt="">
-                        <div class="card-body p-4">
-                            <div class="text-center">
-
-                                <h6 class="fw-bolder">WILD ROSES</h6>
-
-                                <span class="price">$259</span>
-                                <a class="addtocart" href="">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section id="videodesc">
-        <div class="container">
-            <div class="row videotitles">
-                <div class="video">
-                    <img src="./Assets/images/h3-video-img.jpg" alt="">
-                    <i class="fas fa-play-circle"></i>
-                </div>
-                <div class="title">
-                    <h2>Suprise Your
-                        <span style="color: red;">Valentine!</span>
+                    <div class="title">
+                        <h2>Suprise Your
+                            <span style="color: red;">Valentine!</span>
+                            <br>
+                            <span>Let us arrange a smile.</span>
+                        </h2>
+                        <p>Where flowers are our inspiration to create lasting memories. <br>Whatever the occasion...
+                        </p>
                         <br>
-                        <span>Let us arrange a smile.</span>
-                    </h2>
-                    <p>Where flowers are our inspiration to create lasting memories. <br>Whatever the occasion...</p>
-                    <br>
-                    <div class="iconLists">
-                        <div class="lists">
-                            <div class="icon">
-                                <img src="./Assets/images/h1-custom-icon.png" alt="">
+                        <div class="iconLists">
+                            <div class="lists">
+                                <div class="icon">
+                                    <img src="./Assets/images/h1-custom-icon.png" alt="">
+                                </div>
+                                <div class="list">
+                                    <p>Hand picked just for you.</p>
+                                </div>
                             </div>
-                            <div class="list"><p>Hand picked just for you.</p></div>
+                            <div class="lists">
+                                <div class="icon"><img src="./Assets/images/h1-custom-icon.png" alt=""></div>
+                                <div class="list">
+                                    <p>Unique flower arrangements</p>
+                                </div>
+                            </div>
+                            <div class="lists">
+                                <div class="icon"><img src="./Assets/images/h1-custom-icon.png" alt=""></div>
+                                <div class="list">
+                                    <p>Best way to say you care.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="lists">
-                            <div class="icon"><img src="./Assets/images/h1-custom-icon.png" alt=""></div>
-                            <div class="list"><p>Unique flower arrangements</p></div>
-                        </div>
-                        <div class="lists">
-                            <div class="icon"><img src="./Assets/images/h1-custom-icon.png" alt=""></div>
-                            <div class="list"><p>Best way to say you care.</p></div>
+                        <div class="description">
+
                         </div>
                     </div>
-                <div class="description">
-    
+                </div>
+        </section>
+        <section id="ExpertsFlower">
+            <div class="container">
+                <div class="titleInfo">
+                    <div class="title">
+                        <h2>Flower Experts</h2>
+                    </div>
+                    <div>
+                        <div class="info">
+                            <p>A perfect blend of creativity, energy, communication, happiness and love. Let us <br>
+                                arrange a smile for you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experts">
+                    <div class="row">
+                        <div class="card">
+                            <div class="expertImage">
+                                <img src="./Assets/images/h3-team-img-1.png" alt="">
+                            </div>
+                            <div class="nameInfo">
+                                <h6>CRYSTAL BROOKS</h6>
+                                <span>Florist</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="expertImage">
+                                <img src="./Assets/images/h3-team-img-2.png" alt="">
+                            </div>
+                            <div class="nameInfo">
+                                <h6>SHIRLEY HARRIS</h6>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="expertImage">
+                                <img src="./Assets/images/h3-team-img-3.png" alt="">
+                            </div>
+                            <div class="nameInfo">
+                                <h6>BEVERLY CLARK</h6>
+                                <span>Florist</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="expertImage">
+                                <img src="./Assets/images/h3-team-img-4.png" alt="">
+                            </div>
+                            <div class="nameInfo">
+                                <h6>AMANDA WATKINS</h6>
+                                <span>Florist</span>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </section>
+        <section id="paralax">
+            <div class="parallax-window parlaxWindow" data-parallax="scroll"
+                data-image-src="./Assets/images/h3-background-img.jpg">
+                <div class="parallaxBtnTitle">
+                    <div class="parallaxTitle">
+                        <h4>Join The Colorful Bunch!</h4>
+                    </div>
+                    <div class="parallaxBtn">
+                        <input type="email" value size="40" style="padding: 20px;" placeholder="Email Address" required>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+        <section id="fromOurBlog">
+
+            <div class="fromOurBlogTitle">
+                <div class="BlogTitle">
+                    <h2>From our Blog</h2>
+                </div>
+                <div class="BlogInfo">
+                    <p>A perfect blend of creativity, energy, communication, happiness and love. Let us <br> arrange a
+                        smile for you.</p>
+                </div>
+            </div>
+            <div class="Blogger row  row-cols-4 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col ">
+                    <div class="blogCards card bg-body">
+                        <div class="dateTime">
+                            <span>27.04.2018</span>
+                        </div>
+                        <div class="cardImage">
+                            <img src="./Assets/images/blog-feature-img-1.jpg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h6 class="fw-bolder">FLOWER POWER</h6>
+
+                                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="blogCards card bg-body">
+                        <div class="dateTime">
+                            <span>27.04.2018</span>
+                        </div>
+                        <div class="cardImage">
+                            <img src="./Assets/images/blog-feature-img-3.jpg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h6 class="fw-bolder">FLOWER POWER</h6>
+
+                                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="blogCards card bg-body">
+                        <div class="dateTime">
+                            <span>27.04.2018</span>
+                        </div>
+                        <div class="cardImage">
+                            <img src="./Assets/images/blog-feature-img-4.jpg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-center">
+
+                                <h6 class="fw-bolder">FLOWER POWER</h6>
+
+                                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="lastHomeSlide">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="profilPhoto">
+                            <img src="./Assets/images/testimonial-img-2.png" alt="">
+                        </div>
+                        <div class="profilInfo">
+                            <p>Nullam dictum felis eu pede mollis pretium. Integer <br> tincidunt. Cras dapibus lingua.
+                            </p>
+                        </div>
+                        <div class="profilName">
+                            <span>ANNA BARNES</span><br>
+                            <P>Florist</P>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="profilPhoto">
+                            <img src="./Assets/images/testimonial-img-1.png" alt="">
+                        </div>
+                        <div class="profilInfo">
+                            <p>Nullam dictum felis eu pede mollis pretium. Integer <br> tincidunt. Cras dapibus lingua.
+                            </p>
+                        </div>
+                        <div class="profilName">
+                            <span>JASMINE WHITE</span>
+                            <p>Florist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footerTop">
+            <div class="container">
+                <div class="links row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
+                    <div class="col ">
+                        <div class="Cards card bg-body">
+                            <div class="CustomerService">
+                                <h6>CUSTOMER SERVICE</h6>
+                            </div>
+                            <div class="card-body ">
+                                <ul>
+                                    <li><a href="">Help & Contact Us</a></li>
+                                    <li><a href="">Returns & Refunds</a></li>
+                                    <li><a href="">Online Stores</a></li>
+                                    <li><a href="">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body">
+                            <div class="Company">
+                                <h6>COMPANY</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul >
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Order Tracking</a></li>
+                                    <li><a href="">Fag Page</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Login</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body">
+                            <div class="SocialMedia">
+                                <h6>SOCIAL MEDIA</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul >
+                                    <li><a href="">Twitter</a></li>
+                                    <li><a href="">Instagram</a></li>
+                                    <li><a href="">Tumblr</a></li>
+                                    <li><a href="">Pinterest</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body">
+                            <div class="Archive">
+                                <h6>ARCHIVE</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul >
+                                   <li><a href="">Designer Shoes</a></li>
+                                   <li><a href="">Gallery</a></li>
+                                   <li><a href="">Pricing</a></li>
+                                   <li><a href="">Feature Index</a></li>
+                                   <li><a href="">Login</a></li>
+                                   <li><a href="">Help & Supports</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </section>
-    <section id="ExpertsFlower">
-        <div class="container">
-            <div class="titleInfo">
-                <div class="title">
+       
+        
+        <div class="footerBottom">
+            <div class="container">
+                
+                <div class="NoCopyright row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
                     
-                </div>
-                <div>
-                    <div class="info">
-    
+                    <div class="col ">
+                        <div class="Cards card bg-body">
+                            <div class="Copyright">
+                                <span><b>©</b> 2018</span> <a href="#">Qode Interactive,</a><span> All Rights Reserved</span>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body">
+                            <div class="DebitCar">
+                                <a href="#"><img src="./Assets/images/footer-bottom-1.png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="Cards card bg-body">
+                            <div class="SocialLinks">
+                                <a class="inst" href="">INSTAGRAM</a>
+                                <a class="face" href="">FACEBOOK</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 </div>
             </div>
         </div>
-    </section>
-  </main>
-  <div id="backToTop">
-    <i class="fas fa-chevron-up"></i>
-</div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </footer>
+    <div id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./Assets/js/parallax.min.js"></script>
+
+    <script src="./Assets/js/owl.carousel.min.js"></script>
     <script src="./Assets/js/script.js"></script>
 </body>
 

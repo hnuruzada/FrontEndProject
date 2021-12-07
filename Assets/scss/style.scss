@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 html {
@@ -16,6 +17,7 @@ html {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
 nav {
     box-shadow: 1px 25px 62px -16px rgba(0, 0, 0, 0.47);
@@ -28,6 +30,7 @@ li a:hover {
 
 header {
     nav {
+
         .container {
             .row {
                 height: 100px;
@@ -284,31 +287,36 @@ main {
     #photo-slide {
         position: relative;
 
+
         .imagesSlide {
             overflow: hidden;
 
-            .imgscale{
+            .imgscale {
                 position: relative;
+
                 img {
                     opacity: 0;
                     position: relative;
                     z-index: -2;
                     animation: 50s linear 0s normal none infinite running zoomEffect;
-                    
+
                     animation-duration: 9s;
-                    
-    
+
+
                     width: 100%;
                     height: 477px;
                 }
+
                 @keyframes zoomEffect {
                     from {
-                        transform: scale(1, 1);
+                        transform: scale(1);
                     }
+
                     to {
-                        transform: scale(1.5, 1.5);
+                        transform: scale(1.14);
                     }
                 }
+
                 // .lefticon{
                 //     position: absolute;
                 //     top: 50%;
@@ -335,7 +343,7 @@ main {
 
                 &:hover {
                     color: black;
-                    
+
                 }
 
 
@@ -354,7 +362,7 @@ main {
 
                 &:hover {
                     color: black;
-                    
+
                 }
 
             }
@@ -413,109 +421,537 @@ main {
 
         }
     }
-}
 
+    #productFilter {
 
+        .links {
+            width: 70%;
 
+            ul {
+                display: flex;
+                justify-content: space-between;
 
+                li {
+                    &.hide {
 
-#productFilter {
+                        transition: 0.3s;
+                        opacity: 0;
+                        visibility: hidden;
 
-    .links {
-        width: 70%;
+                    }
 
-        ul {
-            display: flex;
-            justify-content: space-between;
+                    a {
+                        color: black;
+                        font-size: 12px;
 
-            li {
-                &.hide {
+                    }
 
-                    transition: 0.3s;
-                    opacity: 0;
-                    visibility: hidden;
-
-                }
-
-                a {
-                    color: black;
-                    font-size: 12px;
-
-                }
-
-                &:hover a {
-                    color: green;
+                    &:hover a {
+                        color: green;
+                    }
                 }
             }
         }
-    }
 
-    .product {
-        .Cards {
-            border: none;
+        .product {
+            .Cards {
+                border: none;
+                margin: 30px 0;
 
-            .card-body {
-                .text-center {
-                    .price {
-                        text-align: center;
-                        position: absolute;
+                .sold {
+                    position: absolute;
+                    width: 250px;
+                    height: 100px;
+                    top: 20px;
+                    left: 20px;
+
+                    z-index: 4;
+
+                    span {
+                        padding: 10px;
+                        background-color: black;
+                        color: white;
                     }
+                }
 
-                    .addtocart {
-                        text-align: center;
-                        position: absolute;
+                .sale {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    width: 250px;
+                    height: 100px;
+
+                    z-index: 4;
+
+                    span {
+                        padding: 10px;
+                        background-color: white;
                         color: black;
                     }
                 }
-            }
-        }
-    }
-}
 
-#videodesc {
-    padding: 30px 0;
-    
+                .cardImage {
+                    overflow: hidden;
 
-    .container {
-        .videotitles {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+                    img {
+                        transition: 0.3s;
 
-            .video {
-                position: relative;
-                overflow: hidden;
-
-                img {
-
-                    width: 600px;
-                    height: 400px;
-                    transition: 0.3s;
-
-                    &:hover {
-                        transform: scale(1.08);
+                        &:hover {
+                            transform: scale(1.08);
+                        }
                     }
                 }
 
-                i {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 60px;
-                    color: white;
-                    background-color: red;
-                    border-radius: 50%;
+                .card-body {
+                    .text-center {
+                        .priceCart {
+                            position: relative;
+
+                            .price {
+                                opacity: 50%;
+                                transition: .3s;
+
+                                span {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            .addToCart {
+
+                                position: absolute;
+                                top: 0;
+                                left: -60px;
+                                opacity: 0;
+                                color: black;
+                                transition: .3s;
+
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                    font-size: 12px;
+                                }
+                            }
+
+                            &:hover .price {
+                                transform: translateX(40px);
+                                opacity: 0;
+                            }
+
+                            &:hover .addToCart {
+                                transform: translateX(120px);
+                                opacity: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #videodesc {
+        padding: 30px 0;
+
+
+        .container {
+            .videotitles {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .video {
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+
+                        width: 600px;
+                        height: 400px;
+                        transition: 0.3s;
+
+                        &:hover {
+                            transform: scale(1.08);
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 60px;
+                        color: white;
+                        background-color: red;
+                        border-radius: 50%;
+                    }
+                }
+
+                .title {
+                    .iconLists {
+                        .lists {
+                            display: flex;
+
+                            .icon {
+                                margin-right: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #ExpertsFlower {
+
+        .container {
+            align-items: center;
+            padding: 50px 0;
+
+            .titleInfo {
+                .title {
+                    text-align: center;
+
+                }
+
+                .info {
+                    text-align: center;
+
                 }
             }
 
-            .title {
-                .iconLists {
-                    .lists {
-                        display: flex;
+            .experts {
+                .row {
+                    display: flex;
+                    justify-content: space-between;
 
-                        .icon {
-                            margin-right: 25px;
+                    .card {
+                        border: none;
+
+                        .nameInfo {
+                            text-align: center;
+                            margin-top: 20px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #paralax {
+        .parlaxWindow {
+            min-height: 400px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .parallaxBtnTitle {
+
+
+
+                .parallaxTitle {
+                    text-align: center;
+
+                    h4 {
+
+                        color: white;
+                    }
+                }
+
+                .parallaxBtn {
+                    display: flex;
+
+                    input {
+                        height: 60px;
+                        width: 400px;
+
+                    }
+
+                    button {
+                        width: 100px;
+                        height: 60px;
+                        background-color: red;
+                        color: white;
+                        border: none;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    #fromOurBlog {
+        margin: 50px 0;
+        overflow: hidden;
+
+        .fromOurBlogTitle {
+            margin-bottom: 60px;
+            text-align: center;
+
+        }
+
+        .Blogger {
+            .col {
+                .blogCards {
+                    border: none;
+
+                    .dateTime {
+                        text-align: center;
+                        position: absolute;
+                        background-color: white;
+                        width: 80px;
+                        height: 30px;
+                        top: 5px;
+                        left: 5px;
+                        z-index: 4;
+
+                        span {
+                            font-size: 12px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+
+                    .cardImage {
+                        overflow: hidden;
+
+                        img {
+                            transition: .3s;
+
+                            &:hover {
+                                transform: scale(1.08);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    #lastHomeSlide {
+        .owl-carousel {
+
+            .owl-nav {
+
+                background-color: white;
+
+                button.owl-prev {
+                    background-color: white;
+                    position: absolute;
+                    top: 40%;
+                    left: 0;
+                    border: none;
+
+                    .preleft {
+                        border: none;
+                        font-size: 25px;
+                        outline: none;
+                    }
+
+                    &:hover .preleft {
+
+                        border: none;
+                        background-color: white;
+                        color: grey;
+                        font-weight: 200;
+
+                    }
+
+
+
+                }
+
+                .owl-next {
+                    position: absolute;
+                    top: 40%;
+                    right: 0;
+                    border: none;
+                    background-color: white;
+                    
+
+                    .nextright {
+                        border: none;
+                        font-size: 25px;
+                        outline: none;
+                    }
+
+                    &:hover .nextright {
+                        border: none;
+                        background-color: white;
+                        color: grey;
+                        font-weight: 200;
+                        outline: none;
+                    }
+
+                }
+
+            }
+
+            .item {
+
+                .profilPhoto {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 30px;
+
+                    img {
+                        width: 110px;
+                        height: 110px;
+                    }
+                }
+
+
+                .profilInfo {
+
+
+                    p {
+                        font-family: 'Lora', serif;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+
+                }
+
+                .profilName {
+                    text-align: center;
+
+                    span {
+                        font-size: 13px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        opacity: 50%;
+                    }
+
+                }
+
+
+            }
+
+
+        }
+    }
+
+}
+
+#footer {
+    background-color: #fefaf3;
+
+    .footerTop {
+
+        .container {
+
+            .links {
+
+                .col {
+                    .Cards {
+                        border: none;
+                        background-color: #fefaf3;
+                        margin: 50px 0;
+
+                        .CustomerService {
+                            h6 {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .Company {
+                            padding-left: 20px;
+
+                            h6 {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .SocialMedia {
+                            h6 {
+                                font-size: 12px;
+                            }
+
+                            padding-left: 20px;
+                        }
+
+                        .Archive {
+                            h6 {
+                                font-size: 12px;
+                            }
+
+                            padding-left: 20px;
+                        }
+
+                        .card-body {
+                            ul {
+                                li {
+                                    a {
+                                        text-decoration: none;
+                                        color: black;
+                                        font-size: 12px;
+                                        opacity: 60%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footerBottom {
+
+        .container {
+            .NoCopyright {
+                justify-content: space-between;
+
+                .col {
+                    .Cards {
+                        margin: 30px 0;
+                        background-color: #fefaf3;
+                        border: none;
+
+                        .Copyright {
+
+                            opacity: 60%;
+
+                            span {
+                                font-size: 10px;
+                            }
+
+                            a {
+                                font-size: 12px;
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+
+                        .SocialLinks {
+                            justify-content: space-between;
+                            text-align: center;
+
+                            .inst {
+                                float: left;
+                            }
+
+                            .face {
+                                float: right;
+                            }
+
+                            a {
+
+                                opacity: 60%;
+                                text-decoration: none;
+                                font-size: 12px;
+                                color: black;
+
+                            }
                         }
                     }
                 }
@@ -524,6 +960,603 @@ main {
     }
 }
 
+
+
+main{
+    #acordion {
+        margin-top: 4rem;
+    
+        .container {
+            h1 {
+                margin-top: 100px;
+                margin-bottom: 150px;
+            }
+    
+            .row {
+    
+                .col {
+                    margin-bottom: 20%;
+    
+                    .accordian {
+                        .card {
+                            background-color: white;
+                            margin-bottom: 1rem;
+                            border: none;
+                            width: 100%;
+    
+                            .card-header {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 0.5rem;
+                                transition: .1s;
+                                border: 1px solid #eee;
+    
+                                &:hover {
+                                    background-color: #F34F3F;
+    
+    
+                                    h3 {
+                                        color: white;
+                                    }
+    
+                                    span {
+    
+                                        color: white;
+    
+                                    }
+    
+    
+                                }
+    
+    
+                                h3 {
+    
+                                    cursor: pointer;
+                                    color: #757575;
+                                    position: relative;
+                                    margin: 0;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    padding: 0px;
+                                    height: 100%;
+    
+    
+                                }
+    
+                                span {
+                                    height: 25px;
+                                    width: 25px;
+                                    color: #757575;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    line-height: 25px;
+                                    font-size: 13px;
+                                }
+    
+    
+    
+                            }
+    
+                            .card-body {
+                                padding: 20px;
+                                display: none;
+                                border: none;
+    
+                                p {
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    color: #444444;
+                                    margin: 0px;
+                                    border: none;
+                                }
+                            }
+    
+                            &:nth-child(1) {
+                                .card-body {
+                                    display: block;
+                                }
+                            }
+                        }
+    
+                        .card1 {
+                            background-color: white;
+                            margin-bottom: 1rem;
+                            width: 100%;
+                            border: none;
+    
+                            .card-header1 {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 0.5rem;
+                                transition: .1s;
+                                border: 1px solid #eee;
+    
+                                &:hover {
+                                    background-color: #F34F3F;
+    
+    
+                                    h3 {
+                                        color: white;
+                                    }
+    
+                                    span {
+    
+                                        color: white;
+    
+                                    }
+    
+    
+                                }
+    
+    
+                                h3 {
+    
+                                    cursor: pointer;
+                                    color: #757575;
+                                    position: relative;
+                                    margin: 0;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    padding: 0px;
+                                    height: 100%;
+    
+    
+                                }
+    
+                                span {
+                                    height: 25px;
+                                    width: 25px;
+                                    color: #757575;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    line-height: 25px;
+                                    font-size: 13px;
+                                }
+    
+    
+    
+                            }
+    
+                            .card-body1 {
+                                padding: 20px;
+                                display: none;
+                                border: none;
+    
+                                p {
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    color: #444444;
+                                    margin: 0px;
+                                    border: none;
+                                }
+                            }
+    
+                            &:nth-child(1) {
+                                .card-body1 {
+                                    display: block;
+                                }
+                            }
+                        }
+    
+                        .card2 {
+                            background-color: white;
+                            margin-bottom: 1rem;
+                            width: 100%;
+                            border: none;
+    
+                            .card-header2 {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 0.5rem;
+                                transition: .1s;
+                                border: 1px solid #eee;
+    
+                                &:hover {
+                                    background-color: #F34F3F;
+    
+    
+                                    h3 {
+                                        color: white;
+                                    }
+    
+                                    span {
+    
+                                        color: white;
+    
+                                    }
+    
+    
+                                }
+    
+    
+                                h3 {
+    
+                                    cursor: pointer;
+                                    color: #757575;
+                                    position: relative;
+                                    margin: 0;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    padding: 0px;
+                                    height: 100%;
+    
+    
+                                }
+    
+                                span {
+                                    height: 25px;
+                                    width: 25px;
+                                    color: #757575;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    line-height: 25px;
+                                    font-size: 13px;
+                                }
+    
+    
+    
+                            }
+    
+                            .card-body2 {
+                                padding: 20px;
+                                display: none;
+                                border: none;
+    
+                                p {
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    color: #444444;
+                                    margin: 0px;
+                                    border: none;
+                                }
+                            }
+    
+                            &:nth-child(1) {
+                                .card-body2 {
+                                    display: block;
+                                }
+                            }
+                        }
+    
+                        .card3 {
+                            background-color: white;
+                            margin-bottom: 1rem;
+                            width: 100%;
+                            border: none;
+    
+                            .card-header3 {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 0.5rem;
+                                transition: .1s;
+                                border: 1px solid #eee;
+    
+                                &:hover {
+                                    background-color: #F34F3F;
+    
+    
+                                    h3 {
+                                        color: white;
+                                    }
+    
+                                    span {
+    
+                                        color: white;
+    
+                                    }
+    
+    
+                                }
+    
+    
+                                h3 {
+    
+                                    cursor: pointer;
+                                    color: #757575;
+                                    position: relative;
+                                    margin: 0;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    padding: 0px;
+                                    height: 100%;
+    
+    
+                                }
+    
+                                span {
+                                    height: 25px;
+                                    width: 25px;
+                                    color: #757575;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    line-height: 25px;
+                                    font-size: 13px;
+                                }
+    
+    
+    
+                            }
+    
+                            .card-body3 {
+                                padding: 20px;
+                                display: none;
+                                border: none;
+    
+                                p {
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    color: #444444;
+                                    margin: 0px;
+                                    border: none;
+                                }
+                            }
+    
+                            &:nth-child(1) {
+                                .card-body3 {
+                                    display: block;
+                                }
+                            }
+                        }
+    
+    
+                    }
+                }
+    
+    
+            }
+        }
+    }
+}
+
+main{
+   
+    #TabHeader {
+        margin: 100px 0;
+
+    
+        .container {
+            .tabTitle{
+                margin: 120px 0;
+            }
+            .eventBox {
+                display: flex;
+               justify-content: space-between;
+               margin: 40px 0;
+                .col {
+                    
+                    .buttons {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        .active{
+                            color: white;
+                            background-color: red;
+                            border: none;
+                            &:hover{
+                                background-color: red;
+                                color: white;
+                            }
+                        }
+                       
+                        .buton{
+
+                            border: 1px solid #eee;
+                           
+                            height: 50px;
+                            width: 120px;
+                            &:hover{
+                                background-color: red;
+                                color: white;
+                            }
+
+                        }
+                       
+                    }
+
+                    .contents {
+                        
+
+                        .content {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 100%;
+                            height: 220px;
+                            border: 1px solid #eee;
+                            
+                            overflow: hidden;
+
+                            p {
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+
+                                margin: 15px;
+                            }
+
+                        }
+                    }
+                    .buttons {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        border: none;
+                        
+                        .activeSecond{
+                            background-color: red;
+                            color: white;
+                            border: none;
+                            &:hover{
+                                background-color: red;
+                                color: white;
+                            }
+                            
+                        }
+                        button{
+                            background-color: white;
+                            border: none;
+                            height: 50px;
+                            width: 120px;
+                            outline: none;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: white;
+                                color:red;
+                            }
+                        }
+                    }
+
+                    .Contents {
+                        
+                        
+                        .Content {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 100%;
+                            height: 220px;
+                            border: 1px solid #eee;
+                            
+                            overflow: hidden;
+
+                            p {
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+
+                                margin: 15px;
+                            }
+
+                        }
+                    }
+                    
+                }
+            }
+        }
+    
+}
+#TabMain{
+    .container{
+        .row{
+            .col{
+                .buttonsmain {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    .activemain{
+                        color: red;
+                        background-color: white;
+                        border: none;
+                    }
+                   
+                    button {
+
+                        border: none;
+                        background-color: white;
+                        height: 50px;
+                        width: 120px;
+                        cursor: pointer;
+                        outline: none;
+                        
+                    }
+                }
+
+                .contentsmain {
+                    
+
+                    .contentmain {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 100%;
+                        height: 220px;
+                        border: 1px solid #eee;
+                        
+                        overflow: hidden;
+
+                        p {
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+
+                            margin: 15px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+#TabFooter{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .container{
+        .row{
+            .col{
+                display: flex;
+                .buttonsfooter {
+                    width: 100%;
+                    display: block;
+                    
+                    .activefooter{
+                        color: white;
+                        background-color: red;
+                        border: none;
+                        &:hover{
+                            background-color: red;
+                            color: white;
+                        }
+                    }
+                   
+                    button {
+
+                        border: 1px solid #eee;
+                        background-color: white;
+                        height: 50px;
+                        width: 120px;
+                        cursor: pointer;
+                        outline: none;
+                        &:hover{
+                            background-color: red;
+                            color: white;
+                        }
+                        
+                    }
+                }
+
+                .contentsfooter {
+                    
+
+                    .contentfooter {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 100%;
+                        height: 220px;
+                        border: 1px solid #eee;
+                        
+                        overflow: hidden;
+
+                        p {
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+
+                            margin: 15px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+}
 #backToTop {
     width: 50px;
     height: 50px;
@@ -539,6 +1572,16 @@ main {
     border-radius: 12px;
     display: none;
     cursor: pointer;
+    overflow: hidden;
+
+
+    &:hover i {
+        font-size: 30px;
+        box-shadow: 0px 2px 36px 5px rgba(0, 0, 0, 0.88);
+        opacity: 50%;
+        transform: scale(1.01);
+    }
+
 }
 
 //         .myContainer {

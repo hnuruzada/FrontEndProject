@@ -38,6 +38,31 @@ $(document).ready(function () {
         image.src = images[random]
     })
 
+    $('.parallax-window').parallax({imageSrc: '../Assets/images/h3-background-img.jpg'});
+    
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,  
+        navText: [
+            '<i class="bi bi-arrow-left preleft" aria-hidden="true"></i>',
+            '<i class="bi bi-arrow-right nextright" aria-hidden="true"></i>'
+        ],
+        autoplay:true,
+        autoplayTimeout:7000,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
     $(window).scroll(function () {
         let scrollPx = $(window).scrollTop()
         if (scrollPx > 500) {
@@ -53,4 +78,5 @@ $(document).ready(function () {
     $("#backToTop").click(function () {
         $(window).scrollTop(0)
     })
+    
 })
