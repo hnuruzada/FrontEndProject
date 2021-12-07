@@ -774,7 +774,7 @@ main {
                     right: 0;
                     border: none;
                     background-color: white;
-                    
+
 
                     .nextright {
                         border: none;
@@ -962,28 +962,28 @@ main {
 
 
 
-main{
+main {
     #acordion {
         margin-top: 4rem;
-    
+
         .container {
             h1 {
                 margin-top: 100px;
                 margin-bottom: 150px;
             }
-    
+
             .row {
-    
+
                 .col {
                     margin-bottom: 20%;
-    
+
                     .accordian {
-                        .card {
+                        .Card {
                             background-color: white;
                             margin-bottom: 1rem;
                             border: none;
                             width: 100%;
-    
+
                             .card-header {
                                 display: flex;
                                 justify-content: space-between;
@@ -991,27 +991,27 @@ main{
                                 padding: 0.5rem;
                                 transition: .1s;
                                 border: 1px solid #eee;
-    
+
                                 &:hover {
                                     background-color: #F34F3F;
-    
-    
+
+
                                     h3 {
                                         color: white;
                                     }
-    
+
                                     span {
-    
+
                                         color: white;
-    
+
                                     }
-    
-    
+
+
                                 }
-    
-    
+
+
                                 h3 {
-    
+
                                     cursor: pointer;
                                     color: #757575;
                                     position: relative;
@@ -1020,10 +1020,10 @@ main{
                                     line-height: 18px;
                                     padding: 0px;
                                     height: 100%;
-    
-    
+
+
                                 }
-    
+
                                 span {
                                     height: 25px;
                                     width: 25px;
@@ -1033,16 +1033,16 @@ main{
                                     line-height: 25px;
                                     font-size: 13px;
                                 }
-    
-    
-    
+
+
+
                             }
-    
+
                             .card-body {
                                 padding: 20px;
                                 display: none;
                                 border: none;
-    
+
                                 p {
                                     font-size: 15px;
                                     line-height: 24px;
@@ -1051,20 +1051,20 @@ main{
                                     border: none;
                                 }
                             }
-    
+
                             &:nth-child(1) {
                                 .card-body {
                                     display: block;
                                 }
                             }
                         }
-    
-                        .card1 {
+
+                        .Card1 {
                             background-color: white;
                             margin-bottom: 1rem;
                             width: 100%;
                             border: none;
-    
+
                             .card-header1 {
                                 display: flex;
                                 justify-content: space-between;
@@ -1072,27 +1072,27 @@ main{
                                 padding: 0.5rem;
                                 transition: .1s;
                                 border: 1px solid #eee;
-    
+
                                 &:hover {
                                     background-color: #F34F3F;
-    
-    
+
+
                                     h3 {
                                         color: white;
                                     }
-    
+
                                     span {
-    
+
                                         color: white;
-    
+
                                     }
-    
-    
+
+
                                 }
-    
-    
+
+
                                 h3 {
-    
+
                                     cursor: pointer;
                                     color: #757575;
                                     position: relative;
@@ -1101,10 +1101,10 @@ main{
                                     line-height: 18px;
                                     padding: 0px;
                                     height: 100%;
-    
-    
+
+
                                 }
-    
+
                                 span {
                                     height: 25px;
                                     width: 25px;
@@ -1114,16 +1114,16 @@ main{
                                     line-height: 25px;
                                     font-size: 13px;
                                 }
-    
-    
-    
+
+
+
                             }
-    
+
                             .card-body1 {
                                 padding: 20px;
                                 display: none;
                                 border: none;
-    
+
                                 p {
                                     font-size: 15px;
                                     line-height: 24px;
@@ -1132,20 +1132,20 @@ main{
                                     border: none;
                                 }
                             }
-    
+
                             &:nth-child(1) {
                                 .card-body1 {
                                     display: block;
                                 }
                             }
                         }
-    
-                        .card2 {
+
+                        .Card2 {
                             background-color: white;
                             margin-bottom: 1rem;
                             width: 100%;
                             border: none;
-    
+
                             .card-header2 {
                                 display: flex;
                                 justify-content: space-between;
@@ -1153,27 +1153,27 @@ main{
                                 padding: 0.5rem;
                                 transition: .1s;
                                 border: 1px solid #eee;
-    
+
                                 &:hover {
                                     background-color: #F34F3F;
-    
-    
+
+
                                     h3 {
                                         color: white;
                                     }
-    
+
                                     span {
-    
+
                                         color: white;
-    
+
                                     }
-    
-    
+
+
                                 }
-    
-    
+
+
                                 h3 {
-    
+
                                     cursor: pointer;
                                     color: #757575;
                                     position: relative;
@@ -1182,10 +1182,10 @@ main{
                                     line-height: 18px;
                                     padding: 0px;
                                     height: 100%;
-    
-    
+
+
                                 }
-    
+
                                 span {
                                     height: 25px;
                                     width: 25px;
@@ -1195,16 +1195,16 @@ main{
                                     line-height: 25px;
                                     font-size: 13px;
                                 }
-    
-    
-    
+
+
+
                             }
-    
+
                             .card-body2 {
                                 padding: 20px;
                                 display: none;
                                 border: none;
-    
+
                                 p {
                                     font-size: 15px;
                                     line-height: 24px;
@@ -1213,20 +1213,20 @@ main{
                                     border: none;
                                 }
                             }
-    
+
                             &:nth-child(1) {
                                 .card-body2 {
                                     display: block;
                                 }
                             }
                         }
-    
-                        .card3 {
+
+                        .Card3 {
                             background-color: white;
                             margin-bottom: 1rem;
                             width: 100%;
                             border: none;
-    
+
                             .card-header3 {
                                 display: flex;
                                 justify-content: space-between;
@@ -1234,27 +1234,27 @@ main{
                                 padding: 0.5rem;
                                 transition: .1s;
                                 border: 1px solid #eee;
-    
+
                                 &:hover {
                                     background-color: #F34F3F;
-    
-    
+
+
                                     h3 {
                                         color: white;
                                     }
-    
+
                                     span {
-    
+
                                         color: white;
-    
+
                                     }
-    
-    
+
+
                                 }
-    
-    
+
+
                                 h3 {
-    
+
                                     cursor: pointer;
                                     color: #757575;
                                     position: relative;
@@ -1263,10 +1263,10 @@ main{
                                     line-height: 18px;
                                     padding: 0px;
                                     height: 100%;
-    
-    
+
+
                                 }
-    
+
                                 span {
                                     height: 25px;
                                     width: 25px;
@@ -1276,16 +1276,16 @@ main{
                                     line-height: 25px;
                                     font-size: 13px;
                                 }
-    
-    
-    
+
+
+
                             }
-    
+
                             .card-body3 {
                                 padding: 20px;
                                 display: none;
                                 border: none;
-    
+
                                 p {
                                     font-size: 15px;
                                     line-height: 24px;
@@ -1294,71 +1294,76 @@ main{
                                     border: none;
                                 }
                             }
-    
+
                             &:nth-child(1) {
                                 .card-body3 {
                                     display: block;
                                 }
                             }
                         }
-    
-    
+
+
                     }
                 }
-    
-    
+
+
             }
         }
     }
 }
 
-main{
-   
+main {
+
     #TabHeader {
         margin: 100px 0;
 
-    
+
         .container {
-            .tabTitle{
+            .tabTitle {
                 margin: 120px 0;
             }
+
             .eventBox {
                 display: flex;
-               justify-content: space-between;
-               margin: 40px 0;
+                justify-content: space-between;
+                margin: 40px 0;
+
                 .col {
-                    
+
                     .buttons {
                         width: 100%;
                         display: flex;
                         justify-content: flex-start;
-                        .active{
+
+                        .active {
                             color: white;
                             background-color: red;
                             border: none;
-                            &:hover{
+
+                            &:hover {
                                 background-color: red;
                                 color: white;
                             }
                         }
-                       
-                        .buton{
+
+                        .buton {
 
                             border: 1px solid #eee;
-                           
+
                             height: 50px;
                             width: 120px;
-                            &:hover{
+
+                            &:hover {
                                 background-color: red;
                                 color: white;
                             }
 
                         }
-                       
+
                     }
 
                     .contents {
-                        
+
 
                         .content {
                             display: flex;
@@ -1367,7 +1372,7 @@ main{
                             width: 100%;
                             height: 220px;
                             border: 1px solid #eee;
-                            
+
                             overflow: hidden;
 
                             p {
@@ -1380,39 +1385,43 @@ main{
 
                         }
                     }
+
                     .buttons {
                         width: 100%;
                         display: flex;
                         justify-content: flex-start;
                         border: none;
-                        
-                        .activeSecond{
+
+                        .activeSecond {
                             background-color: red;
                             color: white;
                             border: none;
-                            &:hover{
+
+                            &:hover {
                                 background-color: red;
                                 color: white;
                             }
-                            
+
                         }
-                        button{
+
+                        button {
                             background-color: white;
                             border: none;
                             height: 50px;
                             width: 120px;
                             outline: none;
                             cursor: pointer;
-                            &:hover{
+
+                            &:hover {
                                 background-color: white;
-                                color:red;
+                                color: red;
                             }
                         }
                     }
 
                     .Contents {
-                        
-                        
+
+
                         .Content {
                             display: flex;
                             justify-content: space-around;
@@ -1420,7 +1429,7 @@ main{
                             width: 100%;
                             height: 220px;
                             border: 1px solid #eee;
-                            
+
                             overflow: hidden;
 
                             p {
@@ -1433,130 +1442,362 @@ main{
 
                         }
                     }
-                    
+
                 }
             }
         }
-    
-}
-#TabMain{
-    .container{
-        .row{
-            .col{
-                .buttonsmain {
-                    width: 100%;
+
+    }
+
+    #TabMain {
+        .container {
+            .row {
+                .col {
+                    .buttonsmain {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        .activemain {
+                            color: red;
+                            background-color: white;
+                            border: none;
+                        }
+
+                        button {
+
+                            border: none;
+                            background-color: white;
+                            height: 50px;
+                            width: 120px;
+                            cursor: pointer;
+                            outline: none;
+
+                        }
+                    }
+
+                    .contentsmain {
+
+
+                        .contentmain {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 100%;
+                            height: 220px;
+                            border: 1px solid #eee;
+
+                            overflow: hidden;
+
+                            p {
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+
+                                margin: 15px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #TabFooter {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .container {
+            .row {
+                .col {
                     display: flex;
-                    align-items: center;
-                    .activemain{
-                        color: red;
-                        background-color: white;
-                        border: none;
-                    }
-                   
-                    button {
 
-                        border: none;
-                        background-color: white;
-                        height: 50px;
-                        width: 120px;
-                        cursor: pointer;
-                        outline: none;
-                        
-                    }
-                }
-
-                .contentsmain {
-                    
-
-                    .contentmain {
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
+                    .buttonsfooter {
                         width: 100%;
-                        height: 220px;
-                        border: 1px solid #eee;
-                        
-                        overflow: hidden;
+                        display: block;
 
-                        p {
-                            width: 100%;
-                            height: 100%;
-                            overflow: hidden;
+                        .activefooter {
+                            color: white;
+                            background-color: red;
+                            border: none;
 
-                            margin: 15px;
+                            &:hover {
+                                background-color: red;
+                                color: white;
+                            }
                         }
 
+                        button {
+
+                            border: 1px solid #eee;
+                            background-color: white;
+                            height: 50px;
+                            width: 120px;
+                            cursor: pointer;
+                            outline: none;
+
+                            &:hover {
+                                background-color: red;
+                                color: white;
+                            }
+
+                        }
+                    }
+
+                    .contentsfooter {
+
+
+                        .contentfooter {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 100%;
+                            height: 220px;
+                            border: 1px solid #eee;
+
+                            overflow: hidden;
+
+                            p {
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+
+                                margin: 15px;
+                            }
+
+                        }
                     }
                 }
             }
         }
     }
 }
-#TabFooter{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    .container{
-        .row{
-            .col{
-                display: flex;
-                .buttonsfooter {
-                    width: 100%;
-                    display: block;
-                    
-                    .activefooter{
-                        color: white;
-                        background-color: red;
-                        border: none;
-                        &:hover{
-                            background-color: red;
-                            color: white;
+
+main{
+    #titleProgress{
+        .container{
+            .row{
+                .col{
+                    .ProgressName{
+                        h1{
+                            margin: 150px 0;
                         }
-                    }
-                   
-                    button {
-
-                        border: 1px solid #eee;
-                        background-color: white;
-                        height: 50px;
-                        width: 120px;
-                        cursor: pointer;
-                        outline: none;
-                        &:hover{
-                            background-color: red;
-                            color: white;
-                        }
-                        
-                    }
-                }
-
-                .contentsfooter {
-                    
-
-                    .contentfooter {
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                        width: 100%;
-                        height: 220px;
-                        border: 1px solid #eee;
-                        
-                        overflow: hidden;
-
-                        p {
-                            width: 100%;
-                            height: 100%;
-                            overflow: hidden;
-
-                            margin: 15px;
-                        }
-
                     }
                 }
             }
         }
     }
+    #FirstBars {
+        margin-bottom: 200px;
+        .container {
+            .row {
+    
+                .bars {
+    
+                    .bar1 {
+    
+    
+                        .firstb {
+                            display: flex;
+    
+                            .mask {
+                                width: 460px;
+                                height: 4px;
+                                margin-top: 9px;
+                                border-radius: 12px;
+    
+    
+                                background-color: black;
+    
+                                .loadingBar {
+    
+                                    height: 4px;
+                                    background-color: red;
+                                }
+                            }
+                            p {
+                                margin-left: 20px;
+        
+        
+                            }
+                        }
+    
+                        
+                    }
+    
+                    .bar2 {
+    
+    
+                        .secondb {
+                            display: flex;
+    
+                            .mask {
+                                width: 460px;
+                                height: 4px;
+                                margin-top: 9px;
+                                border-radius: 12px;
+    
+    
+                                background-color: black;
+    
+                                .loadingBar {
+    
+                                    height: 4px;
+                                    background-color: red;
+                                }
+                            }
+                            p {
+                                margin-left: 20px;
+        
+        
+                            }
+                        }
+    
+                        
+                    }
+    
+                    .bar3 {
+    
+    
+                        .thirdb {
+                            display: flex;
+    
+                            .mask {
+                                width: 460px;
+                                height: 4px;
+                                margin-top: 9px;
+                                border-radius: 12px;
+    
+    
+                                background-color: black;
+    
+                                .loadingBar {
+    
+                                    height:4px;
+                                    background-color: red;
+                                }
+                            }
+                            p {
+                                margin-left: 20px;
+        
+        
+                            }
+                        }
+    
+                       
+                    }
+                }
+    
+            }
+        }
+    }
+    #SecondBar {
+        margin: 250px 0;
+        .container {
+            .row {
+    
+                .barsfooter {
+                    
+                    .barheader {
+    
+    
+                        .firstb {
+                            display: flex;
+    
+                            .mask {
+                                width: 100%;
+                                height: 4px;
+                                margin-top: 9px;
+                                border-radius: 12px;
+    
+    
+                                background-color: black;
+    
+                                .loadingBar {
+    
+                                    height: 4px;
+                                    background-color: red;
+                                }
+                            }
+                            p {
+                                margin-left: 20px;
+        
+        
+                            }
+                        }
+    
+                        
+                    }
+    
+                    .barmain {
+    
+    
+                        .secondb {
+                            display: flex;
+    
+                            .mask {
+                                width: 100%;
+                                height: 4px;
+                                margin-top: 9px;
+                                border-radius: 12px;
+    
+    
+                                background-color: black;
+    
+                                .loadingBar {
+    
+                                    height: 4px;
+                                    background-color: red;
+                                }
+                            }
+                            p {
+                                margin-left: 20px;
+        
+        
+                            }
+                        }
+    
+                        
+                    }
+    
+                    .barfooter {
+    
+    
+                        .thirdb {
+                            display: flex;
+    
+                            .mask {
+                                width: 100%;
+                                height: 4px;
+                                margin-top: 9px;
+                                border-radius: 12px;
+    
+    
+                                background-color: black;
+    
+                                .loadingBar {
+    
+                                    height:4px;
+                                    background-color: red;
+                                }
+                            }
+                            p {
+                                margin-left: 20px;
+        
+        
+                            }
+                        }
+    
+                       
+                    }
+                }
+    
+            }
+        }
+    }
 }
-}
+
 #backToTop {
     width: 50px;
     height: 50px;

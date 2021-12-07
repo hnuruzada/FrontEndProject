@@ -917,14 +917,14 @@ main #acordion .container .row .col {
   margin-bottom: 20%;
 }
 
-main #acordion .container .row .col .accordian .card {
+main #acordion .container .row .col .accordian .Card {
   background-color: white;
   margin-bottom: 1rem;
   border: none;
   width: 100%;
 }
 
-main #acordion .container .row .col .accordian .card .card-header {
+main #acordion .container .row .col .accordian .Card .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -940,19 +940,19 @@ main #acordion .container .row .col .accordian .card .card-header {
   border: 1px solid #eee;
 }
 
-main #acordion .container .row .col .accordian .card .card-header:hover {
+main #acordion .container .row .col .accordian .Card .card-header:hover {
   background-color: #F34F3F;
 }
 
-main #acordion .container .row .col .accordian .card .card-header:hover h3 {
+main #acordion .container .row .col .accordian .Card .card-header:hover h3 {
   color: white;
 }
 
-main #acordion .container .row .col .accordian .card .card-header:hover span {
+main #acordion .container .row .col .accordian .Card .card-header:hover span {
   color: white;
 }
 
-main #acordion .container .row .col .accordian .card .card-header h3 {
+main #acordion .container .row .col .accordian .Card .card-header h3 {
   cursor: pointer;
   color: #757575;
   position: relative;
@@ -963,7 +963,7 @@ main #acordion .container .row .col .accordian .card .card-header h3 {
   height: 100%;
 }
 
-main #acordion .container .row .col .accordian .card .card-header span {
+main #acordion .container .row .col .accordian .Card .card-header span {
   height: 25px;
   width: 25px;
   color: #757575;
@@ -973,13 +973,13 @@ main #acordion .container .row .col .accordian .card .card-header span {
   font-size: 13px;
 }
 
-main #acordion .container .row .col .accordian .card .card-body {
+main #acordion .container .row .col .accordian .Card .card-body {
   padding: 20px;
   display: none;
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card .card-body p {
+main #acordion .container .row .col .accordian .Card .card-body p {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
@@ -987,18 +987,18 @@ main #acordion .container .row .col .accordian .card .card-body p {
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card:nth-child(1) .card-body {
+main #acordion .container .row .col .accordian .Card:nth-child(1) .card-body {
   display: block;
 }
 
-main #acordion .container .row .col .accordian .card1 {
+main #acordion .container .row .col .accordian .Card1 {
   background-color: white;
   margin-bottom: 1rem;
   width: 100%;
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card1 .card-header1 {
+main #acordion .container .row .col .accordian .Card1 .card-header1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1014,19 +1014,19 @@ main #acordion .container .row .col .accordian .card1 .card-header1 {
   border: 1px solid #eee;
 }
 
-main #acordion .container .row .col .accordian .card1 .card-header1:hover {
+main #acordion .container .row .col .accordian .Card1 .card-header1:hover {
   background-color: #F34F3F;
 }
 
-main #acordion .container .row .col .accordian .card1 .card-header1:hover h3 {
+main #acordion .container .row .col .accordian .Card1 .card-header1:hover h3 {
   color: white;
 }
 
-main #acordion .container .row .col .accordian .card1 .card-header1:hover span {
+main #acordion .container .row .col .accordian .Card1 .card-header1:hover span {
   color: white;
 }
 
-main #acordion .container .row .col .accordian .card1 .card-header1 h3 {
+main #acordion .container .row .col .accordian .Card1 .card-header1 h3 {
   cursor: pointer;
   color: #757575;
   position: relative;
@@ -1037,7 +1037,7 @@ main #acordion .container .row .col .accordian .card1 .card-header1 h3 {
   height: 100%;
 }
 
-main #acordion .container .row .col .accordian .card1 .card-header1 span {
+main #acordion .container .row .col .accordian .Card1 .card-header1 span {
   height: 25px;
   width: 25px;
   color: #757575;
@@ -1047,13 +1047,13 @@ main #acordion .container .row .col .accordian .card1 .card-header1 span {
   font-size: 13px;
 }
 
-main #acordion .container .row .col .accordian .card1 .card-body1 {
+main #acordion .container .row .col .accordian .Card1 .card-body1 {
   padding: 20px;
   display: none;
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card1 .card-body1 p {
+main #acordion .container .row .col .accordian .Card1 .card-body1 p {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
@@ -1061,18 +1061,18 @@ main #acordion .container .row .col .accordian .card1 .card-body1 p {
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card1:nth-child(1) .card-body1 {
+main #acordion .container .row .col .accordian .Card1:nth-child(1) .card-body1 {
   display: block;
 }
 
-main #acordion .container .row .col .accordian .card2 {
+main #acordion .container .row .col .accordian .Card2 {
   background-color: white;
   margin-bottom: 1rem;
   width: 100%;
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card2 .card-header2 {
+main #acordion .container .row .col .accordian .Card2 .card-header2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1088,19 +1088,19 @@ main #acordion .container .row .col .accordian .card2 .card-header2 {
   border: 1px solid #eee;
 }
 
-main #acordion .container .row .col .accordian .card2 .card-header2:hover {
+main #acordion .container .row .col .accordian .Card2 .card-header2:hover {
   background-color: #F34F3F;
 }
 
-main #acordion .container .row .col .accordian .card2 .card-header2:hover h3 {
+main #acordion .container .row .col .accordian .Card2 .card-header2:hover h3 {
   color: white;
 }
 
-main #acordion .container .row .col .accordian .card2 .card-header2:hover span {
+main #acordion .container .row .col .accordian .Card2 .card-header2:hover span {
   color: white;
 }
 
-main #acordion .container .row .col .accordian .card2 .card-header2 h3 {
+main #acordion .container .row .col .accordian .Card2 .card-header2 h3 {
   cursor: pointer;
   color: #757575;
   position: relative;
@@ -1111,7 +1111,7 @@ main #acordion .container .row .col .accordian .card2 .card-header2 h3 {
   height: 100%;
 }
 
-main #acordion .container .row .col .accordian .card2 .card-header2 span {
+main #acordion .container .row .col .accordian .Card2 .card-header2 span {
   height: 25px;
   width: 25px;
   color: #757575;
@@ -1121,13 +1121,13 @@ main #acordion .container .row .col .accordian .card2 .card-header2 span {
   font-size: 13px;
 }
 
-main #acordion .container .row .col .accordian .card2 .card-body2 {
+main #acordion .container .row .col .accordian .Card2 .card-body2 {
   padding: 20px;
   display: none;
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card2 .card-body2 p {
+main #acordion .container .row .col .accordian .Card2 .card-body2 p {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
@@ -1135,18 +1135,18 @@ main #acordion .container .row .col .accordian .card2 .card-body2 p {
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card2:nth-child(1) .card-body2 {
+main #acordion .container .row .col .accordian .Card2:nth-child(1) .card-body2 {
   display: block;
 }
 
-main #acordion .container .row .col .accordian .card3 {
+main #acordion .container .row .col .accordian .Card3 {
   background-color: white;
   margin-bottom: 1rem;
   width: 100%;
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card3 .card-header3 {
+main #acordion .container .row .col .accordian .Card3 .card-header3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1162,19 +1162,19 @@ main #acordion .container .row .col .accordian .card3 .card-header3 {
   border: 1px solid #eee;
 }
 
-main #acordion .container .row .col .accordian .card3 .card-header3:hover {
+main #acordion .container .row .col .accordian .Card3 .card-header3:hover {
   background-color: #F34F3F;
 }
 
-main #acordion .container .row .col .accordian .card3 .card-header3:hover h3 {
+main #acordion .container .row .col .accordian .Card3 .card-header3:hover h3 {
   color: white;
 }
 
-main #acordion .container .row .col .accordian .card3 .card-header3:hover span {
+main #acordion .container .row .col .accordian .Card3 .card-header3:hover span {
   color: white;
 }
 
-main #acordion .container .row .col .accordian .card3 .card-header3 h3 {
+main #acordion .container .row .col .accordian .Card3 .card-header3 h3 {
   cursor: pointer;
   color: #757575;
   position: relative;
@@ -1185,7 +1185,7 @@ main #acordion .container .row .col .accordian .card3 .card-header3 h3 {
   height: 100%;
 }
 
-main #acordion .container .row .col .accordian .card3 .card-header3 span {
+main #acordion .container .row .col .accordian .Card3 .card-header3 span {
   height: 25px;
   width: 25px;
   color: #757575;
@@ -1195,13 +1195,13 @@ main #acordion .container .row .col .accordian .card3 .card-header3 span {
   font-size: 13px;
 }
 
-main #acordion .container .row .col .accordian .card3 .card-body3 {
+main #acordion .container .row .col .accordian .Card3 .card-body3 {
   padding: 20px;
   display: none;
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card3 .card-body3 p {
+main #acordion .container .row .col .accordian .Card3 .card-body3 p {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
@@ -1209,7 +1209,7 @@ main #acordion .container .row .col .accordian .card3 .card-body3 p {
   border: none;
 }
 
-main #acordion .container .row .col .accordian .card3:nth-child(1) .card-body3 {
+main #acordion .container .row .col .accordian .Card3:nth-child(1) .card-body3 {
   display: block;
 }
 
@@ -1451,6 +1451,156 @@ main #TabFooter .container .row .col .contentsfooter .contentfooter p {
   height: 100%;
   overflow: hidden;
   margin: 15px;
+}
+
+main #titleProgress .container .row .col .ProgressName h1 {
+  margin: 150px 0;
+}
+
+main #FirstBars {
+  margin-bottom: 200px;
+}
+
+main #FirstBars .container .row .bars .bar1 .firstb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #FirstBars .container .row .bars .bar1 .firstb .mask {
+  width: 460px;
+  height: 4px;
+  margin-top: 9px;
+  border-radius: 12px;
+  background-color: black;
+}
+
+main #FirstBars .container .row .bars .bar1 .firstb .mask .loadingBar {
+  height: 4px;
+  background-color: red;
+}
+
+main #FirstBars .container .row .bars .bar1 .firstb p {
+  margin-left: 20px;
+}
+
+main #FirstBars .container .row .bars .bar2 .secondb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #FirstBars .container .row .bars .bar2 .secondb .mask {
+  width: 460px;
+  height: 4px;
+  margin-top: 9px;
+  border-radius: 12px;
+  background-color: black;
+}
+
+main #FirstBars .container .row .bars .bar2 .secondb .mask .loadingBar {
+  height: 4px;
+  background-color: red;
+}
+
+main #FirstBars .container .row .bars .bar2 .secondb p {
+  margin-left: 20px;
+}
+
+main #FirstBars .container .row .bars .bar3 .thirdb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #FirstBars .container .row .bars .bar3 .thirdb .mask {
+  width: 460px;
+  height: 4px;
+  margin-top: 9px;
+  border-radius: 12px;
+  background-color: black;
+}
+
+main #FirstBars .container .row .bars .bar3 .thirdb .mask .loadingBar {
+  height: 4px;
+  background-color: red;
+}
+
+main #FirstBars .container .row .bars .bar3 .thirdb p {
+  margin-left: 20px;
+}
+
+main #SecondBar {
+  margin: 250px 0;
+}
+
+main #SecondBar .container .row .barsfooter .barheader .firstb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #SecondBar .container .row .barsfooter .barheader .firstb .mask {
+  width: 100%;
+  height: 4px;
+  margin-top: 9px;
+  border-radius: 12px;
+  background-color: black;
+}
+
+main #SecondBar .container .row .barsfooter .barheader .firstb .mask .loadingBar {
+  height: 4px;
+  background-color: red;
+}
+
+main #SecondBar .container .row .barsfooter .barheader .firstb p {
+  margin-left: 20px;
+}
+
+main #SecondBar .container .row .barsfooter .barmain .secondb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #SecondBar .container .row .barsfooter .barmain .secondb .mask {
+  width: 100%;
+  height: 4px;
+  margin-top: 9px;
+  border-radius: 12px;
+  background-color: black;
+}
+
+main #SecondBar .container .row .barsfooter .barmain .secondb .mask .loadingBar {
+  height: 4px;
+  background-color: red;
+}
+
+main #SecondBar .container .row .barsfooter .barmain .secondb p {
+  margin-left: 20px;
+}
+
+main #SecondBar .container .row .barsfooter .barfooter .thirdb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #SecondBar .container .row .barsfooter .barfooter .thirdb .mask {
+  width: 100%;
+  height: 4px;
+  margin-top: 9px;
+  border-radius: 12px;
+  background-color: black;
+}
+
+main #SecondBar .container .row .barsfooter .barfooter .thirdb .mask .loadingBar {
+  height: 4px;
+  background-color: red;
+}
+
+main #SecondBar .container .row .barsfooter .barfooter .thirdb p {
+  margin-left: 20px;
 }
 
 #backToTop {
