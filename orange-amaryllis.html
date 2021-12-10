@@ -1,35 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./Assets/scss/owl.carousel.min.css">
-    <link rel="stylesheet" href="./Assets/scss/owl.theme.default.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/slick.css">
     <link rel="stylesheet" href="./Assets/pgwslider.min.css">
-
+    
     <link rel="stylesheet" href="./Assets/scss/style.css">
     <title>Document</title>
 </head>
-
 <body>
     <section id="stickynavbar">
         <div class="container-fluid">
@@ -727,412 +713,280 @@
             </div>
         </section>
     </header>
-
     <main>
-        <section id="photo-slide">
-
-            <div class="col col-lg-12 col-md-12 col-sm-12 col-12">
-                <div class="imagesSlide">
-                    <div class="imgscale">
-                        <i class="bi bi-arrow-right clickright"></i>
-                        <i class="bi bi-arrow-left clickleft"></i>
-                        <img id="loop" src="./Assets/images/h3-slider-background.jpg" alt="">
-                    </div>
-                </div>
-                <div class="flowersInfo" >
-                    <div class="Infos">
-                        <div class="titleInfo">
-                            <span>Send</span><span>flowers</span><span>like</span><br>
-                            <span>you mean it.</span>
-                        </div>
-                        <div class="descInfo">
-                            <p>Where flowers are our inspiration to create lasting <br> memories. Whatever the occasion,
-                                our
-                                flowers will <br> make it special cursus a sit amet mauris. </p>
+        
+        <section id="productlist">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="headTitle py-5">
+                            <h1>Product List</h1>
+                            <p>Where flowers are our inspiration</p>
                         </div>
                     </div>
 
-                    <div class="signatureInfo">
-                        <img src="./Assets/images/h2-sign-img.png" alt="">
-
-                    </div>
                 </div>
             </div>
-
         </section>
-        <section id="filter">
+        
+        <section id="gallery">
             <div class="container">
-                <div id="categories">
-                    <div id="options">
-                        <ul class="row">
-                            <li class="col col-lg-1 col-md-2" data-category="all"> <a href="#" class="clickedColor"> All
-                                </a> </li>
-                            <li class="col col-lg-1 col-md-2" data-category="popular"> <a href="#"> Popular </a> </li>
-                            <li class="col col-lg-1 col-md-2" data-category="winter"> <a href="#"> Winter </a> </li>
-                            <li class="col col-lg-1 col-md-2" data-category="various"> <a href="#"> Various </a> </li>
-                            <li class="col col-lg-1 col-md-2" data-category="exotic"> <a href="#"> Exotic </a> </li>
-                            <li class="col col-lg-1 col-md-2" data-category="greens"> <a href="#"> Greens </a> </li>
-                            <li class="col col-lg-1 col-md-2" data-category="cactuses"> <a href="#"> Cactuses </a> </li>
+                <div class="row">
+                    <div class="col-lg-6 " id="leftorange">
+                        <ul class="pgwSlider">
+                            <li><img data-bs-toggle="modal" data-bs-target="#exampleModal1" src="./Assets/images/orange.2.jpg"></li>
+                            <li><img data-bs-toggle="modal" data-bs-target="#exampleModal2" src="./Assets/images/orange.3.jpg"></li>
+                            <li><img data-bs-toggle="modal" data-bs-target="#exampleModal3" src="./Assets/images/orange.4.jpg"></li>
+                            <li><img data-bs-toggle="modal" data-bs-target="#exampleModal4" src="./Assets/images/orange.5.jpg"></li>
                         </ul>
-                    </div>
-                    <div id="select">
-                        <span> Filter <span><i class="fas fa-caret-down"></i></span></i>
-                            <div>
-                                <ul>
 
-                                            <h3> Price Range </h3>
-                                            <ul>
-                                                <li> <a href="#"> All </a> </li>
-                                                <li> <a href="#"> $0 - $10 </a> </li>
-                                                <li> <a href="#"> $10 - $20 </a> </li>
-                                                <li> <a href="#"> $20 - $30 </a> </li>
-                                                <li> <a href="#"> $30 - $40 </a> </li>
-                                                <li> <a href="#"> $40+ </a> </li>
-                                            </ul>
-
-                                </ul>
-                            </div>
-                        </span>
-                    </div>
-                </div>
-                <div id="cards">
-                    <div class="row row-cols-4 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                        <div class="col col-lg-3 col-md-4 col-sm-4 col-12 all popular various cactuses" data-id="1">
-                            <div class="top">
-                                <img src="./Assets/images/card1.jpg" alt="majesty palm flower" title="Majesty Palm" />
-                            </div>
-                            <div class="title">
-                                <a href="#"> Majesty Palm </a>
-                                <div>
-                                    <p id="buy"> Add to cart </p>
-                                    <p> <span>$</span><span> 259 </span> </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-4 col-sm-4 col-12 all winter exotic" data-id="2">
-                            <div class="top">
-                                <img src="./Assets/images/card2.jpg" alt="foxglove flower" title="Foxglove flower" />
-                            </div>
-                            <div class="title">
-                                <a href="#"> Foxglove flower </a>
-                                <div>
-                                    <p id="buy"> Add to cart </p>
-                                    <p><span>$</span><span> 259 </span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-4 col-sm-4 col-12 all popular exotic cactuses" data-id="3"
-                            id="sweetAlyssum">
-                            <h6 id="sold"> Sold </h6>
-                            <div class="top">
-                                <img src="./Assets/images/card3.jpg" alt="sweet alyssum flower" title="Sweet Alyssum" />
-                            </div>
-                            <div class="title">
-                                <a href="#"> Sweet Alyssum </a>
-                                <div>
-                                    <p> Read more </p>
-                                    <p><span>$</span><span> 259 </span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-4 col-sm-4 col-12 all winter various" data-id="4">
-                            <div class="top">
-                                <img src="./Assets/images/card4.jpg" alt="spring snowflake flower"
-                                    title="Spring Snowflake" />
-                            </div>
-                            <div class="title">
-                                <a href="#"> Spring Snowflake </a>
-                                <div>
-                                    <p id="buy"> Add to cart </p>
-                                    <p> <span>$</span><span> 259 </span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-4 col-sm-4 col-12 all popular" data-id="5" id="scarletSage">
-                            <h6 id="sale"> Sold </h6>
-                            <div class="top">
-                                <img src="./Assets/images/card5.jpg" alt="scarlet sage flower" title="Scarlet Sage" />
-                            </div>
-                            <div class="title">
-                                <a href="#"> Scarlet Sage </a>
-                                <div>
-                                    <p id="buy"> Add to cart </p>
-                                    <p style="color: #2b2b2b;"> <strike style="color: #afafaf;"> $259 </strike>
-                                        <span>$</span><span> 259 </span> </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-4 col-sm-4 col-12 all winter cactuses greens" data-id="6">
-                            <div class="top">
-                                <img src="./Assets/images/card6.jpg" alt="rock soapwort flower" title="Rock Soapwort" />
-                            </div>
-                            <div class="title">
-                                <a href="#"> Rock Soapwort </a>
-                                <div>
-                                    <p> View Products </p>
-                                    <p> <span>$</span><span> 259 </span> </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-4 col-sm-4 col-12 all popular various greens" data-id="7">
-                            <div class="top">
-                                <img src="./Assets/images/card7.jpg" alt="summer savory flower" title="Summer Savory" />
-                            </div>
-                            <div class="title">
-                                <a href="#"> Summer Savory </a>
-                                <div>
-                                    <p id="buy"> Add to cart </p>
-                                    <p> <span>$</span><span> 259 </span> </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 col-md-4 col-sm-4 col-12 all winter exotic" data-id="8">
-                            <div class="top">
-                                <img src="./Assets/images/card7.jpg" alt="wild roses flower" title="Wild Roses" />
-                            </div>
-                            <div class="title">
-                                <a href="#"> Wild Roses </a>
-                                <div>
-                                    <p> Buy on Amazon </p>
-                                    <p><span>$</span><span> 259 </span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="videodesc">
-            <div class="container">
-                <div class="videotitles row row-cols-4 row-cols-md-3 row-cols-xl-4 ">
-                    <div class="video col col-lg-6 col-md-6 col-sm-12 col-12">
-                        <img src="./Assets/images/h3-video-img.jpg" alt="">
-                        <i class="fas fa-play-circle"></i>
-                    </div>
-                    <div class="title col col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="centertitles">
-                            <h2>Suprise Your
-                                <span style="color: red;">Valentine!</span>
-                                <br>
-                                <span>Let us arrange a smile.</span>
-                            </h2>
-                            <p>Where flowers are our inspiration to create lasting memories. <br>Whatever the
-                                occasion...
-                            </p>
-                            <br>
-                            <div class="iconLists">
-                                <div class="lists">
-                                    <div class="icon">
-                                        <img src="./Assets/images/h1-custom-icon.png" alt="">
-                                    </div>
-                                    <div class="list">
-                                        <p>Hand picked just for you.</p>
+                        <div class="orangemodal">
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="single-item">
+                                                <div><img src="./Assets/images/orange.1.jpg"></div>
+                                                <div><img src="./Assets/images/orange.2.jpg"></div>
+                                                <div><img src="./Assets/images/orange.3.jpg"></div>
+                                                <div><img src="./Assets/images/orange.4.jpg"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="lists">
-                                    <div class="icon"><img src="./Assets/images/h1-custom-icon.png" alt=""></div>
-                                    <div class="list">
-                                        <p>Unique flower arrangements</p>
+                            </div>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="single-item">
+                                                <div><img src="./Assets/images/orange.2.jpg"></div>
+                                                <div><img src="./Assets/images/orange.3.jpg"></div>
+                                                <div><img src="./Assets/images/orange.4.jpg"></div>
+                                                <div><img src="./Assets/images/orange.1.jpg"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="lists">
-                                    <div class="icon"><img src="./Assets/images/h1-custom-icon.png" alt=""></div>
-                                    <div class="list">
-                                        <p>Best way to say you care.</p>
+                            </div>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="single-item">
+                                                <div><img src="./Assets/images/orange.3.jpg"></div>
+                                                <div><img src="./Assets/images/orange.4.jpg"></div>
+                                                <div><img src="./Assets/images/orange.1.jpg"></div>
+                                                <div><img src="./Assets/images/orange.2.jpg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="single-item">
+                                                <div><img src="./Assets/images/orange.4.jpg"></div>
+                                                <div><img src="./Assets/images/orange.1.jpg"></div>
+                                                <div><img src="./Assets/images/orange.2.jpg"></div>
+                                                <div><img src="./Assets/images/orange.3.jpg"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="col-lg-6" id="rightorange">
+                        <div class="summary entry-summary">
+                            <h2 class="headTitle">Orange Amaryllis</h2>
+                            <p class="price">$259</p>
+                            <div class="p-description">
+                                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.
+                                    Proin condimentum fermentum nunc.</p>
+                            </div>
+                            <form class="cart">
+                                <div class="quantity-buttons">
+                                    <input class="number" type="number" id="quantity" name="quantity" placeholder="Quantity" min="1" max="10"><br><br>
+                                    <button type="submit">Add to cart</button></div>
+                            </form>
+                            <div class="product_meta">
+                                <span class="normal">SKU: <a>989873</a></span><br>
+                                <span class="normal">Categories: <a href="https://fiorello.qodeinteractive.com/product-category/various/">Various</a>, <a href="https://fiorello.qodeinteractive.com/product-category/exotic/">Exotic</a></span><br>
+                                <span class="normal">Tags: <a href="https://fiorello.qodeinteractive.com/product-tag/llilies/" >Llilies</a>, <a href="https://fiorello.qodeinteractive.com/product-tag/orchids/">Orchids</a></span><br>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="ExpertsFlower">
+        
+        <section id="tabs">
             <div class="container">
-                <div class="titleInfo">
-                    <div class="title">
-                        <h2>Flower Experts</h2>
-                    </div>
-                    <div>
-                        <div class="info">
-                            <p>A perfect blend of creativity, energy, communication, happiness and love. Let us <br>
-                                arrange a smile for you.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="experts">
-                    <div class="row">
-                        <div class="col col-lg-2 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="expertImage text-center">
-                                    <img src="./Assets/images/h3-team-img-1.png" alt="">
-                                </div>
-                                <div class="nameInfo">
-                                    <h6>CRYSTAL BROOKS</h6>
-                                    <span>Florist</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-2 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="expertImage text-center">
-                                    <img src="./Assets/images/h3-team-img-2.png" alt="">
-                                </div>
-                                <div class="nameInfo">
-                                    <h6>SHIRLEY HARRIS</h6>
-                                    <span>Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-2 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="expertImage text-center">
-                                    <img src="./Assets/images/h3-team-img-3.png" alt="">
-                                </div>
-                                <div class="nameInfo">
-                                    <h6>BEVERLY CLARK</h6>
-                                    <span>Florist</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-2 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="expertImage text-center">
-                                    <img src="./Assets/images/h3-team-img-4.png" alt="">
-                                </div>
-                                <div class="nameInfo">
-                                    <h6>AMANDA WATKINS</h6>
-                                    <span>Florist</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="customtabs">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">DESCRIPTION</button>
+                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">ADDITIONAL INFORMATION</button>
+                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">REVIEWS (2)</button>
 
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="customtab-inner">
+                                    <h3 class="tabh3">
+                                        The power of flowers </h3>
+                                    <p class="tabp">
+                                        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                                        tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <table class="shop_attributes">
+                                    <tbody>
+                                        <tr>
+                                            <th>Weight: </th>
+                                            <td class="product_weight">1 kg</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Dimensions: </th>
+                                            <td class="product_dimensions">30 x 30 x 50 cm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div id="comments">
+                                    <h2 class="reviews-title">Reviews</h2>
+                                    <ul class="commentlist">
+                                        <li class="comment-even">
+                                            <div id="comment-1" class="comment_container">
+                                                <img src="./Assets/images/h3-team-img-3.png" width="60" height="60">
+                                                <div class="comment-text">
+                                                    <p class="info">
+                                                        <span class="author">Joshua Garcia </span>
+                                                        <span class="time">27.04.2018</span>
+                                                    </p>
+                                                    <div class="description">
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="comment-odd">
+                                            <div id="comment-2" class="comment_container">
+                                                <img src="./Assets/images/h3-team-img-2.png" width="60" height="60">
+                                                <div class="comment-text">
+                                                    <p class="info">
+                                                        <span class="author">Joan Stanley </span>
+                                                        <span class="time">27.04.2018</span>
+                                                    </p>
+                                                    <div class="description">
+                                                        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="reviewform">
+                                    <div class="reviewtitle">
+                                        <h1>Add a review</h1>
+                                        <div class="form">
+                                            <form>
+                                                <div class="input mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                                    <p>Your email address will not be published. Required fields are marked * </p>
+                                                    <p>Your review *</p>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+
+                                                <div class="input mb-3">
+                                                    <label for="exampleInputPassword1" class="form-label">Name*</label>
+                                                    <input type="text" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                                <div class="input mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email*</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                </div>
+
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Save my name, email, and website in this browser for the next time I comment.</label>
+                                                </div>
+                                                <button type="submit" class="btn">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
-        <section id="paralax">
-            <div class="parallax-window parlaxWindow" data-parallax="scroll"
-                data-image-src="./Assets/images/h3-background-img.jpg">
-                <div class="parallaxBtnTitle">
-                    <div class="parallaxTitle">
-                        <h4>Join The Colorful Bunch!</h4>
-                    </div>
-                    <div class="parallaxBtn">
-                        <input type="email" value size="40" style="padding: 20px;" placeholder="Email Address" required>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        </section>
-        <section id="fromOurBlog">
-
+        
+        <section id="related">
             <div class="container">
-                <div class="fromOurBlogTitle">
-                    <div class="BlogTitle">
-                        <h2>From our Blog</h2>
+                <div class="row">
+                    <div class="col-12 ">
+                        <h6 class="lefth6">RELATED PRODUCTS</h6>
                     </div>
-                    <div class="BlogInfo">
-                        <p>A perfect blend of creativity, energy, communication, happiness and love. Let us <br> arrange
-                            a
-                            smile for you.</p>
-                    </div>
-                </div>
-                <div class="Blogger row  row-cols-4 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="blogCards card bg-body">
-                            <div class="dateTime">
-                                <span>27.04.2018</span>
-                            </div>
-                            <div class="cardImage">
-                                <img src="./Assets/images/blog-feature-img-1.jpg" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-
-                                    <h6 class="fw-bolder">FLOWER POWER</h6>
-
-                                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                    <div class="inner">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./Assets/images/shop-8-img.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h6>MAJESTY PALM</h6>
+                                    <p id="normal">$259</p>
+                                    <p id="none"> ADD TO CART</p>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="blogCards card bg-body">
-                            <div class="dateTime">
-                                <span>27.04.2018</span>
-                            </div>
-                            <div class="cardImage">
-                                <img src="./Assets/images/blog-feature-img-3.jpg" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-
-                                    <h6 class="fw-bolder">FLOWER POWER</h6>
-
-                                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./Assets/images/shop-6-img.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h6>PINK FLOWER TREE</h6>
+                                    <p id="normal">$189 - $350</p>
+                                    <p id="none"> SELECT OPTIONS</p>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="col col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="blogCards card bg-body">
-                            <div class="dateTime">
-                                <span>27.04.2018</span>
-                            </div>
-                            <div class="cardImage">
-                                <img src="./Assets/images/blog-feature-img-4.jpg" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body p-4">
-                                <div class="text-center">
-
-                                    <h6 class="fw-bolder">FLOWER POWER</h6>
-
-                                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="item">
+                                <span class="sale">Sale</span>
+                                <div class="img">
+                                    <img src="./Assets/images/shop-7-img.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h6>SUMMER SAVORY</h6>
+                                    <p id="normal"><span id="disabled">$259</span><span id="bright"> $159</span> </p>
+                                    <p id="none"> ADD TO CART</p>
                                 </div>
                             </div>
+                        </div>
 
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-        <section id="lastHomeSlide">
-            <div class="container">
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="profilPhoto">
-                            <img src="./Assets/images/testimonial-img-2.png" alt="">
-                        </div>
-                        <div class="profilInfo">
-                            <p>Nullam dictum felis eu pede mollis pretium. Integer <br> tincidunt. Cras dapibus lingua.
-                            </p>
-                        </div>
-                        <div class="profilName">
-                            <span>ANNA BARNES</span><br>
-                            <P>Florist</P>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="profilPhoto">
-                            <img src="./Assets/images/testimonial-img-1.png" alt="">
-                        </div>
-                        <div class="profilInfo">
-                            <p>Nullam dictum felis eu pede mollis pretium. Integer <br> tincidunt. Cras dapibus lingua.
-                            </p>
-                        </div>
-                        <div class="profilName">
-                            <span>JASMINE WHITE</span>
-                            <p>Florist</p>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="item">
+                                <span class="sale">Sale</span>
+                                <div class="img">
+                                    <img src="./Assets/images/shop-9-img.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h6>SCARLET SAGE</h6>
+                                    <p id="normal"><span id="disabled">$259</span><span id="bright"> $159</span> </p>
+                                    <p id="none"> ADD TO CART</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1140,15 +994,15 @@
         </section>
     </main>
     <footer id="footer">
-        <div class="footerTop" style="box-sizing: border-box;">
+        <div class="footerTop">
             <div class="container">
                 <div class="links row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
                     <div class="col ">
                         <div class="Cards card bg-body">
-                            <div class="CustomerService" style="background-color: #fefaf3;">
+                            <div class="CustomerService" style="background-color: #fafef3;">
                                 <h6>CUSTOMER SERVICE</h6>
                             </div>
-                            <div class="card-body " style="background-color: #fefaf3;">
+                            <div class="card-body " style="background-color: #fafef3;">
                                 <ul>
                                     <li><a href="">Help & Contact Us</a></li>
                                     <li><a href="">Returns & Refunds</a></li>
@@ -1161,11 +1015,11 @@
                     </div>
                     <div class="col ">
                         <div class="Cards card bg-body">
-                            <div class="Company" style="background-color: #fefaf3;">
+                            <div class="Company" style="background-color: #fafef3;">
                                 <h6>COMPANY</h6>
                             </div>
-                            <div class="card-body" style="background-color: #fefaf3;">
-                                <ul>
+                            <div class="card-body" style="background-color: #fafef3;">
+                                <ul >
                                     <li><a href="">About Us</a></li>
                                     <li><a href="">Blog</a></li>
                                     <li><a href="">Order Tracking</a></li>
@@ -1179,11 +1033,11 @@
                     </div>
                     <div class="col ">
                         <div class="Cards card bg-body">
-                            <div class="SocialMedia" style="background-color: #fefaf3;">
+                            <div class="SocialMedia" style="background-color: #fafef3;">
                                 <h6>SOCIAL MEDIA</h6>
                             </div>
-                            <div class="card-body" style="background-color: #fefaf3;">
-                                <ul>
+                            <div class="card-body" style="background-color: #fafef3;">
+                                <ul >
                                     <li><a href="">Twitter</a></li>
                                     <li><a href="">Instagram</a></li>
                                     <li><a href="">Tumblr</a></li>
@@ -1195,17 +1049,17 @@
                     </div>
                     <div class="col ">
                         <div class="Cards card bg-body">
-                            <div class="Archive" style="background-color: #fefaf3;">
+                            <div class="Archive" style="background-color: #fafef3;">
                                 <h6>ARCHIVE</h6>
                             </div>
-                            <div class="card-body" style="background-color: #fefaf3;">
-                                <ul>
-                                    <li><a href="">Designer Shoes</a></li>
-                                    <li><a href="">Gallery</a></li>
-                                    <li><a href="">Pricing</a></li>
-                                    <li><a href="">Feature Index</a></li>
-                                    <li><a href="">Login</a></li>
-                                    <li><a href="">Help & Supports</a></li>
+                            <div class="card-body" style="background-color: #fafef3;">
+                                <ul >
+                                   <li><a href="">Designer Shoes</a></li>
+                                   <li><a href="">Gallery</a></li>
+                                   <li><a href="">Pricing</a></li>
+                                   <li><a href="">Feature Index</a></li>
+                                   <li><a href="">Login</a></li>
+                                   <li><a href="">Help & Supports</a></li>
                                 </ul>
                             </div>
 
@@ -1215,65 +1069,55 @@
 
             </div>
         </div>
-
-
-        <div class="footerBottom" style="box-sizing: border-box;">
+       
+        
+        <div class="footerBottom">
             <div class="container">
-
+                
                 <div class="NoCopyright row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4">
-
+                    
                     <div class="col ">
-                        <div class="Cards card bg-body">
-                            <div class="Copyright" style="background-color: #fefaf3;">
-                                <span><b>©</b> 2018</span> <a href="#">Qode Interactive,</a><span> All Rights
-                                    Reserved</span>
+                        <div class="Cards card bg-body" style="background-color: #fafef3;">
+                            <div class="Copyright" style="background-color: #fafef3;">
+                                <span><b>©</b> 2018</span> <a href="#">Qode Interactive,</a><span> All Rights Reserved</span>
                             </div>
-
+                            
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="Cards card bg-body">
-                            <div class="DebitCar" style="background-color: #fefaf3;">
+                        <div class="Cards card bg-body" style="background-color: #fafef3;">
+                            <div class="DebitCar" style="background-color: #fafef3;">
                                 <a href="#"><img src="./Assets/images/footer-bottom-1.png" alt=""></a>
                             </div>
-
+                            
                         </div>
                     </div>
                     <div class="col ">
                         <div class="Cards card bg-body">
-                            <div class="SocialLinks" style="background-color: #fefaf3;">
+                            <div class="SocialLinks" style="background-color: #fafef3;">
                                 <a class="inst" href="">INSTAGRAM</a>
                                 <a class="face" href="">FACEBOOK</a>
                             </div>
-
+                            
                         </div>
                     </div>
-                </div>
+                 </div>
             </div>
         </div>
     </footer>
     <div id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./Assets/js/parallax.min.js"></script>
-
-    <script src="./Assets/js/owl.carousel.min.js"></script>
-    <script src="./Assets/js/script.js"></script>
     <script src="./Assets/slick.min.js"></script>
-
+    <script src="./Assets/js/orange-amaryllis.js"></script>
 
 
     <script src="./Assets/pgwslider.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
-
 </html>

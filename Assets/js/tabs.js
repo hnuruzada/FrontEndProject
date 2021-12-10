@@ -83,7 +83,14 @@ btnfooter.forEach((button) => {
     }
 })
 $(document).ready(function(){
-
+    $(window).scroll(function (e) {
+        let position = $(this).scrollTop();
+        if (position > 200) {
+            $('#stickynavbar').css('display', 'flex');
+        } else {
+            $('#stickynavbar').css('display', 'none');
+        }
+    });
 
 
 

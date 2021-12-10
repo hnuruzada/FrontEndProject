@@ -1,22 +1,18 @@
 $(document).ready(function(){
+    $('.pgwSlider').pgwSlider({
+        listPosition: 'left',
+        autoSlide: false,
+    });
 
+    $('.single-item').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        nextArrow: `<i class="fal fa-arrow-right iconright"></i>`,
+        prevArrow: `<i class="fal fa-arrow-left iconleft"></i>`,
+    });
 
-
-
-
-
-  $(document).on('click', '.card-header', function()
-    {   
-       $(this).siblings('.card-header').children('i').removeClass('fa-minus').addClass('fa-plus');
-       $(this).siblings('.card-body').not($(this).next()).slideUp();
-       $(this).children('i').toggleClass('fa-plus').toggleClass('fa-minus');
-       $(this).next().slideToggle();
-       $(this).siblings('.active').removeClass('active');
-       $(this).toggleClass('active');
-    })
-  
-
-    $(window).scroll(function (e) {
+    $(window).scroll(function(e) {
         let position = $(this).scrollTop();
         if (position > 200) {
             $('#stickynavbar').css('display', 'flex');
@@ -24,10 +20,6 @@ $(document).ready(function(){
             $('#stickynavbar').css('display', 'none');
         }
     });
-
-
-
-
     $(window).scroll(function () {
         let scrollPx = $(window).scrollTop()
         if (scrollPx > 500) {
@@ -43,4 +35,5 @@ $(document).ready(function(){
     $("#backToTop").click(function () {
         $(window).scrollTop(0)
     })
-  })
+
+})
